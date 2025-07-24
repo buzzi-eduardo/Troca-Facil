@@ -1,0 +1,4550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e580d51235b744554fd69991a8e0e99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9e580d51235b744554fd69991a8e0e99" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9e580d51235b744554fd69991a8e0e99 = L.map(
+                "map_9e580d51235b744554fd69991a8e0e99",
+                {
+                    center: [-25.43790377368421, -49.214497557894745],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_653d3b690788f10e260938f134a4dde9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_653d3b690788f10e260938f134a4dde9.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var feature_group_f171928376f437d5e30048cb22ca91de = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_ee6befc915c12085831f3480d643a24f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_50085d80ab6acf10f08d15f2726890bd = L.marker(
+                [-25.4394778, -49.2169808],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_bf3c4bb4e51e4a883fbef5bf0ca87844 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39f4b931537381d8a0b9efa407e34326 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c63fb12c5fef46cef9de08c6acc278a = $(`<div id="html_4c63fb12c5fef46cef9de08c6acc278a" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Delegado Leopoldo Belczak, 2045, Curitiba, PR<br>         Preço: R$ 1,000 | Área: 24.0 m²<br>         Valor/m²: R$ 42/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-pr-curitiba-capao-da-imbuia-RS1000/id-19183422/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_39f4b931537381d8a0b9efa407e34326.setContent(html_4c63fb12c5fef46cef9de08c6acc278a);
+            
+        
+
+        marker_50085d80ab6acf10f08d15f2726890bd.bindPopup(popup_39f4b931537381d8a0b9efa407e34326)
+        ;
+
+        
+    
+    
+                marker_50085d80ab6acf10f08d15f2726890bd.setIcon(icon_bf3c4bb4e51e4a883fbef5bf0ca87844);
+            
+    
+            var marker_22129ce3ffe22e155376d0c337877413 = L.marker(
+                [-25.4360766, -49.2170528],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_e5e725ef09fe97728a6853dec7a009a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60e347ece02d832d4be3b97d0c508c3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51d751caa5c28c3839f4d6ebb10cf4cd = $(`<div id="html_51d751caa5c28c3839f4d6ebb10cf4cd" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Frederico Stadler Jr, 294, Curitiba, PR<br>         Preço: R$ 1,150 | Área: 23.0 m²<br>         Valor/m²: R$ 50/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-pr-curitiba-capao-da-imbuia-RS1150/id-12739731/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_60e347ece02d832d4be3b97d0c508c3e.setContent(html_51d751caa5c28c3839f4d6ebb10cf4cd);
+            
+        
+
+        marker_22129ce3ffe22e155376d0c337877413.bindPopup(popup_60e347ece02d832d4be3b97d0c508c3e)
+        ;
+
+        
+    
+    
+                marker_22129ce3ffe22e155376d0c337877413.setIcon(icon_e5e725ef09fe97728a6853dec7a009a1);
+            
+    
+            var marker_8945c318cd42c43787e05316d8532f82 = L.marker(
+                [-25.4319567, -49.2092517],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_f92d22521ba2246e1ebe22941553f8ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ac47bfbf5b8bf2fd507857473098121 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef6bd38368723af95c4ddafd20717b64 = $(`<div id="html_ef6bd38368723af95c4ddafd20717b64" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Rossana Mansur De Macedo, 16, Curitiba, PR<br>         Preço: R$ 1,200 | Área: 20.0 m²<br>         Valor/m²: R$ 60/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-com-garagem-pr-curitiba-capao-da-imbuia-RS1200/id-30288418/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_6ac47bfbf5b8bf2fd507857473098121.setContent(html_ef6bd38368723af95c4ddafd20717b64);
+            
+        
+
+        marker_8945c318cd42c43787e05316d8532f82.bindPopup(popup_6ac47bfbf5b8bf2fd507857473098121)
+        ;
+
+        
+    
+    
+                marker_8945c318cd42c43787e05316d8532f82.setIcon(icon_f92d22521ba2246e1ebe22941553f8ff);
+            
+    
+            var marker_d7890196391b86660fa6fe4806b94270 = L.marker(
+                [-25.4413929, -49.2105379],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_afb75de780e5f213897e3dca65d5de0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e357924700445c07c802527eae7e7af6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7298066bd070057812f38cb1bb03246d = $(`<div id="html_7298066bd070057812f38cb1bb03246d" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Professor Benedito Conceição, 1552, Curitiba, PR<br>         Preço: R$ 1,400 | Área: 35.0 m²<br>         Valor/m²: R$ 40/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-pr-curitiba-capao-da-imbuia-RS1400/id-29866121/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_e357924700445c07c802527eae7e7af6.setContent(html_7298066bd070057812f38cb1bb03246d);
+            
+        
+
+        marker_d7890196391b86660fa6fe4806b94270.bindPopup(popup_e357924700445c07c802527eae7e7af6)
+        ;
+
+        
+    
+    
+                marker_d7890196391b86660fa6fe4806b94270.setIcon(icon_afb75de780e5f213897e3dca65d5de0b);
+            
+    
+            var marker_20bdda690268c477c5f37f00fc06bc54 = L.marker(
+                [-25.4438852, -49.2075443],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_63d9fde77e8d1db9c590b83496f310b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51098524575a097d496bc89a9a4a16a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca41df34e04788680277e99689a6ac68 = $(`<div id="html_ca41df34e04788680277e99689a6ac68" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Avenida Prefeito Mauricio Fruet, 2.030, Curitiba, PR<br>         Preço: R$ 1,650 | Área: 32.0 m²<br>         Valor/m²: R$ 52/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-pr-curitiba-capao-da-imbuia-RS1650/id-28433451/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_51098524575a097d496bc89a9a4a16a2.setContent(html_ca41df34e04788680277e99689a6ac68);
+            
+        
+
+        marker_20bdda690268c477c5f37f00fc06bc54.bindPopup(popup_51098524575a097d496bc89a9a4a16a2)
+        ;
+
+        
+    
+    
+                marker_20bdda690268c477c5f37f00fc06bc54.setIcon(icon_63d9fde77e8d1db9c590b83496f310b4);
+            
+    
+            var marker_5ca96fc6d6488df0c9d6f92de852a1ae = L.marker(
+                [-25.4403726, -49.214103],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_a04841dac72dd0985d7b797f57b06ea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0314f93420746d32776ecb877748562 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fb42651856757cfae8d3b6a00aca880 = $(`<div id="html_1fb42651856757cfae8d3b6a00aca880" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Coronel Arthur Ferreira De Abreu, 778, Curitiba, PR<br>         Preço: R$ 1,800 | Área: 45.0 m²<br>         Valor/m²: R$ 40/m²<br>         Quartos: 2 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-2-quartos-pr-curitiba-capao-da-imbuia-45m2-RS1800/id-31954370/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_f0314f93420746d32776ecb877748562.setContent(html_1fb42651856757cfae8d3b6a00aca880);
+            
+        
+
+        marker_5ca96fc6d6488df0c9d6f92de852a1ae.bindPopup(popup_f0314f93420746d32776ecb877748562)
+        ;
+
+        
+    
+    
+                marker_5ca96fc6d6488df0c9d6f92de852a1ae.setIcon(icon_a04841dac72dd0985d7b797f57b06ea4);
+            
+    
+            var marker_485409941e2ee00ab232491491f591ba = L.marker(
+                [-25.4361617, -49.2048127],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_7f0b364f953a45f2457d570ee09332fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a14164260adbfc67f9ad168659199d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccf73c936067ea6fe576dd917837f8b6 = $(`<div id="html_ccf73c936067ea6fe576dd917837f8b6" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, 335, Curitiba, PR<br>         Preço: R$ 2,000 | Área: 100.0 m²<br>         Valor/m²: R$ 20/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-100m2-RS2000/id-11059788/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_4a14164260adbfc67f9ad168659199d8.setContent(html_ccf73c936067ea6fe576dd917837f8b6);
+            
+        
+
+        marker_485409941e2ee00ab232491491f591ba.bindPopup(popup_4a14164260adbfc67f9ad168659199d8)
+        ;
+
+        
+    
+    
+                marker_485409941e2ee00ab232491491f591ba.setIcon(icon_7f0b364f953a45f2457d570ee09332fe);
+            
+    
+            var marker_c951448d5bcefc01a53841320b574639 = L.marker(
+                [-25.4403019, -49.2184034],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_c9fce7cbb9d2cc8a0af9da13eb57060f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b663bf5aa415a61b6426574fb13fa35a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4718d7f50216375266903d53178ccba2 = $(`<div id="html_4718d7f50216375266903d53178ccba2" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Francisco Mota Machado, 1638, Curitiba, PR<br>         Preço: R$ 2,300 | Área: 70.0 m²<br>         Valor/m²: R$ 33/m²<br>         Quartos: 1 | Banheiros: 1 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-1-quarto-com-garagem-pr-curitiba-capao-da-imbuia-RS2300/id-30514141/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b663bf5aa415a61b6426574fb13fa35a.setContent(html_4718d7f50216375266903d53178ccba2);
+            
+        
+
+        marker_c951448d5bcefc01a53841320b574639.bindPopup(popup_b663bf5aa415a61b6426574fb13fa35a)
+        ;
+
+        
+    
+    
+                marker_c951448d5bcefc01a53841320b574639.setIcon(icon_c9fce7cbb9d2cc8a0af9da13eb57060f);
+            
+    
+            var marker_9aa43b74a7d7376d6b1e305d80609124 = L.marker(
+                [-25.4356837, -49.217356],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_68e854baa801f304cc213c36e5351a7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a041b84b975a23a8cde1134a744cec6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_789d0a9091782d833fe9d4a2dc878c51 = $(`<div id="html_789d0a9091782d833fe9d4a2dc878c51" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Frederico Stadler Jr, 249, Curitiba, PR<br>         Preço: R$ 2,350 | Área: 100.0 m²<br>         Valor/m²: R$ 24/m²<br>         Quartos: 2 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-2-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS2350/id-27602206/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9a041b84b975a23a8cde1134a744cec6.setContent(html_789d0a9091782d833fe9d4a2dc878c51);
+            
+        
+
+        marker_9aa43b74a7d7376d6b1e305d80609124.bindPopup(popup_9a041b84b975a23a8cde1134a744cec6)
+        ;
+
+        
+    
+    
+                marker_9aa43b74a7d7376d6b1e305d80609124.setIcon(icon_68e854baa801f304cc213c36e5351a7d);
+            
+    
+            var marker_b2b7f9afab74404eb602b2f019e66f98 = L.marker(
+                [-25.4365323, -49.2127443],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_105e027227582a2b130522b5ef622aaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_345d289ee33b746b2ceb024ad7e1abde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ab8091745457d6861ab59783ab79fe9 = $(`<div id="html_3ab8091745457d6861ab59783ab79fe9" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Raul Caron, 924 A, Curitiba, PR<br>         Preço: R$ 2,350 | Área: 70.0 m²<br>         Valor/m²: R$ 34/m²<br>         Quartos: 2 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-2-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS2350/id-25163113/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_345d289ee33b746b2ceb024ad7e1abde.setContent(html_3ab8091745457d6861ab59783ab79fe9);
+            
+        
+
+        marker_b2b7f9afab74404eb602b2f019e66f98.bindPopup(popup_345d289ee33b746b2ceb024ad7e1abde)
+        ;
+
+        
+    
+    
+                marker_b2b7f9afab74404eb602b2f019e66f98.setIcon(icon_105e027227582a2b130522b5ef622aaf);
+            
+    
+            var marker_06f2d28c5b82571f100f8e9f12d862eb = L.marker(
+                [-25.4363848, -49.2136673],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_c512dc5363890411e77a6deeeb1f2d9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fdad5ee8ce4299c244e1ed034fa7e17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ed9bab7ffc7bb52ed0cdb329d247dad = $(`<div id="html_4ed9bab7ffc7bb52ed0cdb329d247dad" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Osmário De Lima, 626, Curitiba, PR<br>         Preço: R$ 4,000 | Área: 206.0 m²<br>         Valor/m²: R$ 19/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS4000/id-31366285/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3fdad5ee8ce4299c244e1ed034fa7e17.setContent(html_4ed9bab7ffc7bb52ed0cdb329d247dad);
+            
+        
+
+        marker_06f2d28c5b82571f100f8e9f12d862eb.bindPopup(popup_3fdad5ee8ce4299c244e1ed034fa7e17)
+        ;
+
+        
+    
+    
+                marker_06f2d28c5b82571f100f8e9f12d862eb.setIcon(icon_c512dc5363890411e77a6deeeb1f2d9e);
+            
+    
+            var marker_6ea70d8d72237e739febc1018c43262c = L.marker(
+                [-25.4358924, -49.2294199],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_77fa8a854aa77226e9cf5369a944b6ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1caf9b3b4c049e75cdb55ad0c874d7a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f42bd56e3d350642f947a5603f45a2a0 = $(`<div id="html_f42bd56e3d350642f947a5603f45a2a0" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antônio Simm, 489, Curitiba, PR<br>         Preço: R$ 11,200 | Área: 465.0 m²<br>         Valor/m²: R$ 24/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-465m2-RS11200/id-30329875/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_1caf9b3b4c049e75cdb55ad0c874d7a3.setContent(html_f42bd56e3d350642f947a5603f45a2a0);
+            
+        
+
+        marker_6ea70d8d72237e739febc1018c43262c.bindPopup(popup_1caf9b3b4c049e75cdb55ad0c874d7a3)
+        ;
+
+        
+    
+    
+                marker_6ea70d8d72237e739febc1018c43262c.setIcon(icon_77fa8a854aa77226e9cf5369a944b6ae);
+            
+    
+            var marker_03e73d26be17055f76e232f1c14baee4 = L.marker(
+                [-25.43396, -49.2038836],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_f2c28fce0f91f26a59388e1b547aed20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8b7d071ef8a06824af7c619e5017e4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_821ce16d02a75c798182c768562705ad = $(`<div id="html_821ce16d02a75c798182c768562705ad" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Edson Zacarias Cordeiro, 162, Curitiba, PR<br>         Preço: R$ 380,000 | Área: 140.0 m²<br>         Valor/m²: R$ 2714/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-140m2-RS380000/id-14196032/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a8b7d071ef8a06824af7c619e5017e4a.setContent(html_821ce16d02a75c798182c768562705ad);
+            
+        
+
+        marker_03e73d26be17055f76e232f1c14baee4.bindPopup(popup_a8b7d071ef8a06824af7c619e5017e4a)
+        ;
+
+        
+    
+    
+                marker_03e73d26be17055f76e232f1c14baee4.setIcon(icon_f2c28fce0f91f26a59388e1b547aed20);
+            
+    
+            var marker_a823d21e59ef265550c1dbfc73d02396 = L.marker(
+                [-25.4364887, -49.2075905],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_04142a08bd108c668a1b8335b2b89d59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46759b42f298eeaa13c0e1575e43c2c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8db8ba006d02ed6b674e20a6f91d0798 = $(`<div id="html_8db8ba006d02ed6b674e20a6f91d0798" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Professora Antônia Reginato Vianna, 1285, Curitiba, PR<br>         Preço: R$ 400,000 | Área: 120.0 m²<br>         Valor/m²: R$ 3333/m²<br>         Quartos: 4 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-120m2-RS400000/id-32932484/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_46759b42f298eeaa13c0e1575e43c2c0.setContent(html_8db8ba006d02ed6b674e20a6f91d0798);
+            
+        
+
+        marker_a823d21e59ef265550c1dbfc73d02396.bindPopup(popup_46759b42f298eeaa13c0e1575e43c2c0)
+        ;
+
+        
+    
+    
+                marker_a823d21e59ef265550c1dbfc73d02396.setIcon(icon_04142a08bd108c668a1b8335b2b89d59);
+            
+    
+            var marker_c9adc3909e593e78b54cd2fd830036af = L.marker(
+                [-25.4373212, -49.205094],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_ab788d9034dedc1356e594ebac83e5ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a53f0a1fb2d269f541c3bf7dd30e4a1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb7584de57e88055f51b112a48342d2e = $(`<div id="html_fb7584de57e88055f51b112a48342d2e" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Paulo Kissula, 820, Curitiba, PR<br>         Preço: R$ 499,900 | Área: 149.0 m²<br>         Valor/m²: R$ 3355/m²<br>         Quartos: 2 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-2-quartos-com-garagem-pr-curitiba-capao-da-imbuia-364m2-RS499900/id-30382127/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a53f0a1fb2d269f541c3bf7dd30e4a1c.setContent(html_fb7584de57e88055f51b112a48342d2e);
+            
+        
+
+        marker_c9adc3909e593e78b54cd2fd830036af.bindPopup(popup_a53f0a1fb2d269f541c3bf7dd30e4a1c)
+        ;
+
+        
+    
+    
+                marker_c9adc3909e593e78b54cd2fd830036af.setIcon(icon_ab788d9034dedc1356e594ebac83e5ff);
+            
+    
+            var marker_2beb9a78e6e90480660465739856d369 = L.marker(
+                [-25.4344056, -49.2037612],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_28be9780acd15ccee65012cfb77c3088 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eee26634ed5155d94c308aeb62d50a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24eda058937ed8ce1781afc478b08fd2 = $(`<div id="html_24eda058937ed8ce1781afc478b08fd2" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Paulo Kissula, 1157, Curitiba, PR<br>         Preço: R$ 649,000 | Área: 200.0 m²<br>         Valor/m²: R$ 3245/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-315m2-RS649000/id-26931707/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_2eee26634ed5155d94c308aeb62d50a7.setContent(html_24eda058937ed8ce1781afc478b08fd2);
+            
+        
+
+        marker_2beb9a78e6e90480660465739856d369.bindPopup(popup_2eee26634ed5155d94c308aeb62d50a7)
+        ;
+
+        
+    
+    
+                marker_2beb9a78e6e90480660465739856d369.setIcon(icon_28be9780acd15ccee65012cfb77c3088);
+            
+    
+            var marker_bf3ec82dc5cdc08be22a4bc8e4b191ab = L.marker(
+                [-25.4359377, -49.2054842],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_8019dac2326bdbde474f12d122c9d0af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78fc45bd54189e7a947d55d43c43a112 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b95d2895dcee37cbeb9d7ee33f6607d2 = $(`<div id="html_b95d2895dcee37cbeb9d7ee33f6607d2" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, 108, Curitiba, PR<br>         Preço: R$ 669,000 | Área: 220.0 m²<br>         Valor/m²: R$ 3041/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-360m2-RS669000/id-22741708/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_78fc45bd54189e7a947d55d43c43a112.setContent(html_b95d2895dcee37cbeb9d7ee33f6607d2);
+            
+        
+
+        marker_bf3ec82dc5cdc08be22a4bc8e4b191ab.bindPopup(popup_78fc45bd54189e7a947d55d43c43a112)
+        ;
+
+        
+    
+    
+                marker_bf3ec82dc5cdc08be22a4bc8e4b191ab.setIcon(icon_8019dac2326bdbde474f12d122c9d0af);
+            
+    
+            var marker_7eac109d0bdac05a1d4473886da8a958 = L.marker(
+                [-25.4387998, -49.228525],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_915aa4f20de92dacbdb30cc57ac7241a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0bc609474c4f6e8c04ed8dd4bac95fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0430aeb3b7a5a70875664a7a33b6f9a4 = $(`<div id="html_0430aeb3b7a5a70875664a7a33b6f9a4" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Francisco Mota Machado, 495, Curitiba, PR<br>         Preço: R$ 690,000 | Área: 210.0 m²<br>         Valor/m²: R$ 3286/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-210m2-RS690000/id-32985571/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_e0bc609474c4f6e8c04ed8dd4bac95fd.setContent(html_0430aeb3b7a5a70875664a7a33b6f9a4);
+            
+        
+
+        marker_7eac109d0bdac05a1d4473886da8a958.bindPopup(popup_e0bc609474c4f6e8c04ed8dd4bac95fd)
+        ;
+
+        
+    
+    
+                marker_7eac109d0bdac05a1d4473886da8a958.setIcon(icon_915aa4f20de92dacbdb30cc57ac7241a);
+            
+    
+            var marker_670816a6d891be3d67677e5d11bd5a0f = L.marker(
+                [-25.4374108, -49.2082561],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_1cddcb8ac575308fa095625d06272611 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1987cbd596ad661a6bc356d4d386e81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6819e69b6f2e27aff3bcb3dde10440b = $(`<div id="html_f6819e69b6f2e27aff3bcb3dde10440b" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, Curitiba, PR<br>         Preço: R$ 704,000 | Área: 308.0 m²<br>         Valor/m²: R$ 2286/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-308m2-RS704000/id-10834496/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a1987cbd596ad661a6bc356d4d386e81.setContent(html_f6819e69b6f2e27aff3bcb3dde10440b);
+            
+        
+
+        marker_670816a6d891be3d67677e5d11bd5a0f.bindPopup(popup_a1987cbd596ad661a6bc356d4d386e81)
+        ;
+
+        
+    
+    
+                marker_670816a6d891be3d67677e5d11bd5a0f.setIcon(icon_1cddcb8ac575308fa095625d06272611);
+            
+    
+            var marker_011ac275d31ab5c79666e388350a9982 = L.marker(
+                [-25.435909, -49.2053884],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_00eeecb37ce5f55312dd3dd20f87514f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7095d2d7f01d59dafdc4d86211876693 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5755e3e7fa98efcee3a2f9959f04bda = $(`<div id="html_f5755e3e7fa98efcee3a2f9959f04bda" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, 271, Curitiba, PR<br>         Preço: R$ 750,000 | Área: 300.0 m²<br>         Valor/m²: R$ 2500/m²<br>         Quartos: 4 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-360m2-RS750000/id-25988547/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_7095d2d7f01d59dafdc4d86211876693.setContent(html_f5755e3e7fa98efcee3a2f9959f04bda);
+            
+        
+
+        marker_011ac275d31ab5c79666e388350a9982.bindPopup(popup_7095d2d7f01d59dafdc4d86211876693)
+        ;
+
+        
+    
+    
+                marker_011ac275d31ab5c79666e388350a9982.setIcon(icon_00eeecb37ce5f55312dd3dd20f87514f);
+            
+    
+            var marker_801a8791e34fd81a7637266d5a6a104c = L.marker(
+                [-25.437355, -49.2042302],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_e2add1e8c244b57a5765de20927cbf60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3237944fc2eb1f431882f07e789aecd4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42e4b20ad53aa8ffbd8ad30c3a15d040 = $(`<div id="html_42e4b20ad53aa8ffbd8ad30c3a15d040" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Capitão Varassin, 440, Curitiba, PR<br>         Preço: R$ 789,000 | Área: 238.0 m²<br>         Valor/m²: R$ 3315/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-238m2-RS789000/id-29970448/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3237944fc2eb1f431882f07e789aecd4.setContent(html_42e4b20ad53aa8ffbd8ad30c3a15d040);
+            
+        
+
+        marker_801a8791e34fd81a7637266d5a6a104c.bindPopup(popup_3237944fc2eb1f431882f07e789aecd4)
+        ;
+
+        
+    
+    
+                marker_801a8791e34fd81a7637266d5a6a104c.setIcon(icon_e2add1e8c244b57a5765de20927cbf60);
+            
+    
+            var marker_1c3c60847cd01fd58b3aa42693941792 = L.marker(
+                [-25.4406214, -49.2158495],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_796437f9d3fde9e871344af697a5f06d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_842d9c3e63b7febe692262c8854e24b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47ca825972a82f9fd2f1735b3803accb = $(`<div id="html_47ca825972a82f9fd2f1735b3803accb" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Tamboara, 70, Curitiba, PR<br>         Preço: R$ 1,029,000 | Área: 370.0 m²<br>         Valor/m²: R$ 2781/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-370m2-RS1029000/id-16980322/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_842d9c3e63b7febe692262c8854e24b2.setContent(html_47ca825972a82f9fd2f1735b3803accb);
+            
+        
+
+        marker_1c3c60847cd01fd58b3aa42693941792.bindPopup(popup_842d9c3e63b7febe692262c8854e24b2)
+        ;
+
+        
+    
+    
+                marker_1c3c60847cd01fd58b3aa42693941792.setIcon(icon_796437f9d3fde9e871344af697a5f06d);
+            
+    
+            var marker_16cef05d7db9f18d550cb6886cb04a46 = L.marker(
+                [-25.4412205, -49.2306357],
+                {
+}
+            ).addTo(marker_cluster_ee6befc915c12085831f3480d643a24f);
+        
+    
+            var icon_5482aad56219ec25c710e06bf197c49a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f91897cfcba4233bc9e25596038f6191 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eeebd4c965920c2358f13d2827e9acc3 = $(`<div id="html_eeebd4c965920c2358f13d2827e9acc3" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Benedito Guil, 46, Curitiba, PR<br>         Preço: R$ 1,800,000 | Área: 814.0 m²<br>         Valor/m²: R$ 2211/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 12.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-900m2-RS1800000/id-32578669/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_f91897cfcba4233bc9e25596038f6191.setContent(html_eeebd4c965920c2358f13d2827e9acc3);
+            
+        
+
+        marker_16cef05d7db9f18d550cb6886cb04a46.bindPopup(popup_f91897cfcba4233bc9e25596038f6191)
+        ;
+
+        
+    
+    
+                marker_16cef05d7db9f18d550cb6886cb04a46.setIcon(icon_5482aad56219ec25c710e06bf197c49a);
+            
+    
+            marker_cluster_ee6befc915c12085831f3480d643a24f.addTo(feature_group_f171928376f437d5e30048cb22ca91de);
+        
+    
+            feature_group_f171928376f437d5e30048cb22ca91de.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var feature_group_333232295a46c956e48b0beaa3c8cb80 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_981b8542f26e9c94db1c2caa7b1d6912 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_630ec8cc0f614a2757c58105fb821de5 = L.marker(
+                [-25.4414111, -49.2074638],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_a0231698bb730a761da60dcf876f3b75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63f804341c7d29b237b4ef7edff95dca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03365ab351c3dcc9b78c0b255a395c7f = $(`<div id="html_03365ab351c3dcc9b78c0b255a395c7f" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Paulo Kissula, Curitiba, PR<br>         Preço: R$ 449,000 | Área: 110.0 m²<br>         Valor/m²: R$ 4082/m²<br>         Quartos: 2 | Banheiros: 1 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-2-quartos-com-garagem-pr-curitiba-capao-da-imbuia-118m2-RS449000/id-22460920/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_63f804341c7d29b237b4ef7edff95dca.setContent(html_03365ab351c3dcc9b78c0b255a395c7f);
+            
+        
+
+        marker_630ec8cc0f614a2757c58105fb821de5.bindPopup(popup_63f804341c7d29b237b4ef7edff95dca)
+        ;
+
+        
+    
+    
+                marker_630ec8cc0f614a2757c58105fb821de5.setIcon(icon_a0231698bb730a761da60dcf876f3b75);
+            
+    
+            var marker_a93380c12d26808ac0ed3430a51d2dbc = L.marker(
+                [-25.4338517, -49.2061061],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_cb857033d450e67e7bdcc48f0df710e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac3b67456c5df09db4bf1102169a6527 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71468d6b70d6f13016780d824148013a = $(`<div id="html_71468d6b70d6f13016780d824148013a" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Amauri Rodrigues De Siqueira, 109, Curitiba, PR<br>         Preço: R$ 450,000 | Área: 120.0 m²<br>         Valor/m²: R$ 3750/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 6.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-250m2-RS450000/id-23781182/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_ac3b67456c5df09db4bf1102169a6527.setContent(html_71468d6b70d6f13016780d824148013a);
+            
+        
+
+        marker_a93380c12d26808ac0ed3430a51d2dbc.bindPopup(popup_ac3b67456c5df09db4bf1102169a6527)
+        ;
+
+        
+    
+    
+                marker_a93380c12d26808ac0ed3430a51d2dbc.setIcon(icon_cb857033d450e67e7bdcc48f0df710e5);
+            
+    
+            var marker_e89010966eca4f74a4e45895f418c4dc = L.marker(
+                [-25.4416293, -49.2036055],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_bfb7e325c04699fc167414a3e6b130a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_945f26dcef87a1663e4421d016360bb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28c43d0ab77e98ea5edd0de2698b76d5 = $(`<div id="html_28c43d0ab77e98ea5edd0de2698b76d5" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Ambrósio Truchem, 150, Curitiba, PR<br>         Preço: R$ 499,000 | Área: 120.0 m²<br>         Valor/m²: R$ 4158/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-200m2-RS499000/id-30908164/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_945f26dcef87a1663e4421d016360bb0.setContent(html_28c43d0ab77e98ea5edd0de2698b76d5);
+            
+        
+
+        marker_e89010966eca4f74a4e45895f418c4dc.bindPopup(popup_945f26dcef87a1663e4421d016360bb0)
+        ;
+
+        
+    
+    
+                marker_e89010966eca4f74a4e45895f418c4dc.setIcon(icon_bfb7e325c04699fc167414a3e6b130a9);
+            
+    
+            var marker_f1b6f5760d5f788e00e3b81dbb35bbc1 = L.marker(
+                [-25.4355571, -49.2328856],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_914d5218d7d8af74d7b7e1ed39921054 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8403c2007799efe30ec3afb2502105b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_004f9385c138baa99d8cae263889039d = $(`<div id="html_004f9385c138baa99d8cae263889039d" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Antônio Olívio Rodrigues, 692, Curitiba, PR<br>         Preço: R$ 570,000 | Área: 137.0 m²<br>         Valor/m²: R$ 4161/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-89m2-RS570000/id-29477009/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_e8403c2007799efe30ec3afb2502105b.setContent(html_004f9385c138baa99d8cae263889039d);
+            
+        
+
+        marker_f1b6f5760d5f788e00e3b81dbb35bbc1.bindPopup(popup_e8403c2007799efe30ec3afb2502105b)
+        ;
+
+        
+    
+    
+                marker_f1b6f5760d5f788e00e3b81dbb35bbc1.setIcon(icon_914d5218d7d8af74d7b7e1ed39921054);
+            
+    
+            var marker_164bd629da7723fe48313fb0317a9f1d = L.marker(
+                [-25.4374442, -49.2122617],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_dee09812022852e769db9b1d0d381b76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9a244b00421e50a30b45fdfd2cbb6c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72cdc2e24f1110b91b0a9cf69a18f4fc = $(`<div id="html_72cdc2e24f1110b91b0a9cf69a18f4fc" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Humberto Mattana, 563, Curitiba, PR<br>         Preço: R$ 585,000 | Área: 136.0 m²<br>         Valor/m²: R$ 4301/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-136m2-RS585000/id-25120236/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_c9a244b00421e50a30b45fdfd2cbb6c6.setContent(html_72cdc2e24f1110b91b0a9cf69a18f4fc);
+            
+        
+
+        marker_164bd629da7723fe48313fb0317a9f1d.bindPopup(popup_c9a244b00421e50a30b45fdfd2cbb6c6)
+        ;
+
+        
+    
+    
+                marker_164bd629da7723fe48313fb0317a9f1d.setIcon(icon_dee09812022852e769db9b1d0d381b76);
+            
+    
+            var marker_e3e7a19ddd79a274fc1bb2200b150f2d = L.marker(
+                [-25.4369743, -49.2132149],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_93ea876c2a0a77dd87408f9c5e229e1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ed778a49b20ac8402d49e035dea6922 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cb21cf94ef74a481c54df6b327c98b2 = $(`<div id="html_7cb21cf94ef74a481c54df6b327c98b2" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Humberto Mattana, 339, Curitiba, PR<br>         Preço: R$ 650,000 | Área: 156.0 m²<br>         Valor/m²: R$ 4167/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-156m2-RS650000/id-25689939/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_2ed778a49b20ac8402d49e035dea6922.setContent(html_7cb21cf94ef74a481c54df6b327c98b2);
+            
+        
+
+        marker_e3e7a19ddd79a274fc1bb2200b150f2d.bindPopup(popup_2ed778a49b20ac8402d49e035dea6922)
+        ;
+
+        
+    
+    
+                marker_e3e7a19ddd79a274fc1bb2200b150f2d.setIcon(icon_93ea876c2a0a77dd87408f9c5e229e1f);
+            
+    
+            var marker_63f6c8c24ebea24408b60b232c468d1a = L.marker(
+                [-25.4425471, -49.2060479],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_7f9d44637f902fee708b4dbac4fcc602 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01e452dd2e0d89fda104705b16e82963 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ea747e1bc1c043124aa12683074d0ea = $(`<div id="html_6ea747e1bc1c043124aa12683074d0ea" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Doutora Juracy Riquelme, 75, Curitiba, PR<br>         Preço: R$ 689,000 | Área: 200.0 m²<br>         Valor/m²: R$ 3445/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-240m2-RS689000/id-25075916/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_01e452dd2e0d89fda104705b16e82963.setContent(html_6ea747e1bc1c043124aa12683074d0ea);
+            
+        
+
+        marker_63f6c8c24ebea24408b60b232c468d1a.bindPopup(popup_01e452dd2e0d89fda104705b16e82963)
+        ;
+
+        
+    
+    
+                marker_63f6c8c24ebea24408b60b232c468d1a.setIcon(icon_7f9d44637f902fee708b4dbac4fcc602);
+            
+    
+            var marker_deb380ab1c673b8a0d58a45e803a8679 = L.marker(
+                [-25.4364979, -49.2101435],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_6eb4f348859c31c9c55af5a9e0ba6065 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b318e6628101fd7e56740afcc54b7916 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebb9391fe7d4f9348e5b3e2343d4055b = $(`<div id="html_ebb9391fe7d4f9348e5b3e2343d4055b" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, 919, Curitiba, PR<br>         Preço: R$ 750,000 | Área: 217.0 m²<br>         Valor/m²: R$ 3456/m²<br>         Quartos: 5 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-217m2-RS750000/id-30902224/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b318e6628101fd7e56740afcc54b7916.setContent(html_ebb9391fe7d4f9348e5b3e2343d4055b);
+            
+        
+
+        marker_deb380ab1c673b8a0d58a45e803a8679.bindPopup(popup_b318e6628101fd7e56740afcc54b7916)
+        ;
+
+        
+    
+    
+                marker_deb380ab1c673b8a0d58a45e803a8679.setIcon(icon_6eb4f348859c31c9c55af5a9e0ba6065);
+            
+    
+            var marker_743bcec2f88fafc16bbac481b78f615e = L.marker(
+                [-25.4401528, -49.2052283],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_652608ae9873df45c6939f1415ad50d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c5fe77019df4acc1f874bccd6ec146d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9eeec426a4519ce7f66352b7d9ddf4d5 = $(`<div id="html_9eeec426a4519ce7f66352b7d9ddf4d5" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Osmário De Lima, 1570, Curitiba, PR<br>         Preço: R$ 799,000 | Área: 200.0 m²<br>         Valor/m²: R$ 3995/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-pr-curitiba-capao-da-imbuia-200m2-RS799000/id-24422346/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3c5fe77019df4acc1f874bccd6ec146d.setContent(html_9eeec426a4519ce7f66352b7d9ddf4d5);
+            
+        
+
+        marker_743bcec2f88fafc16bbac481b78f615e.bindPopup(popup_3c5fe77019df4acc1f874bccd6ec146d)
+        ;
+
+        
+    
+    
+                marker_743bcec2f88fafc16bbac481b78f615e.setIcon(icon_652608ae9873df45c6939f1415ad50d5);
+            
+    
+            var marker_c9d949631f6ad9446be7578816794b59 = L.marker(
+                [-25.4341183, -49.2160175],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_b8f02703d1383c35c8c4fbae9671c787 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a542b01a46d4475bd2209dc9ad97c7b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f19e3f03870069476508ff3ba37b894 = $(`<div id="html_0f19e3f03870069476508ff3ba37b894" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, 270, Curitiba, PR<br>         Preço: R$ 830,000 | Área: 200.0 m²<br>         Valor/m²: R$ 4150/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS830000/id-32140864/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a542b01a46d4475bd2209dc9ad97c7b6.setContent(html_0f19e3f03870069476508ff3ba37b894);
+            
+        
+
+        marker_c9d949631f6ad9446be7578816794b59.bindPopup(popup_a542b01a46d4475bd2209dc9ad97c7b6)
+        ;
+
+        
+    
+    
+                marker_c9d949631f6ad9446be7578816794b59.setIcon(icon_b8f02703d1383c35c8c4fbae9671c787);
+            
+    
+            var marker_4a5ab5f02c71fbae18f5d4c87873d3f4 = L.marker(
+                [-25.4377602, -49.215996],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_5d75945d84f3661a1e4fa5b8366c6d61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7618a61db6762b179f4760db842e0194 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9273e77b9469cf9f5800b503247cd0ee = $(`<div id="html_9273e77b9469cf9f5800b503247cd0ee" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Clávio Molinari, 306, Curitiba, PR<br>         Preço: R$ 900,000 | Área: 216.0 m²<br>         Valor/m²: R$ 4167/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-180m2-RS900000/id-32877449/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_7618a61db6762b179f4760db842e0194.setContent(html_9273e77b9469cf9f5800b503247cd0ee);
+            
+        
+
+        marker_4a5ab5f02c71fbae18f5d4c87873d3f4.bindPopup(popup_7618a61db6762b179f4760db842e0194)
+        ;
+
+        
+    
+    
+                marker_4a5ab5f02c71fbae18f5d4c87873d3f4.setIcon(icon_5d75945d84f3661a1e4fa5b8366c6d61);
+            
+    
+            var marker_db9805511984e6ad453010162603d748 = L.marker(
+                [-25.4360987, -49.2049594],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_d6ab793c76713c6680cd15f72d15d497 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d93abc511f6165b813fe4d0819ff2377 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2b8befef1c2f9e8b47a8fee562cad53 = $(`<div id="html_b2b8befef1c2f9e8b47a8fee562cad53" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, 321, Curitiba, PR<br>         Preço: R$ 960,000 | Área: 270.0 m²<br>         Valor/m²: R$ 3556/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-360m2-RS960000/id-27535138/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_d93abc511f6165b813fe4d0819ff2377.setContent(html_b2b8befef1c2f9e8b47a8fee562cad53);
+            
+        
+
+        marker_db9805511984e6ad453010162603d748.bindPopup(popup_d93abc511f6165b813fe4d0819ff2377)
+        ;
+
+        
+    
+    
+                marker_db9805511984e6ad453010162603d748.setIcon(icon_d6ab793c76713c6680cd15f72d15d497);
+            
+    
+            var marker_d1c502885dd52d67bfd86daabd8f599c = L.marker(
+                [-25.438266, -49.2063522],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_5b6c9292149677124fb3d81f1e6dd808 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d39dfec29181d66560c9f62d4ff27ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf8c627052b480639e8b96c2039574e7 = $(`<div id="html_bf8c627052b480639e8b96c2039574e7" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Benedito França, 52, Curitiba, PR<br>         Preço: R$ 990,000 | Área: 270.0 m²<br>         Valor/m²: R$ 3667/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-283m2-RS990000/id-19866722/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_4d39dfec29181d66560c9f62d4ff27ca.setContent(html_bf8c627052b480639e8b96c2039574e7);
+            
+        
+
+        marker_d1c502885dd52d67bfd86daabd8f599c.bindPopup(popup_4d39dfec29181d66560c9f62d4ff27ca)
+        ;
+
+        
+    
+    
+                marker_d1c502885dd52d67bfd86daabd8f599c.setIcon(icon_5b6c9292149677124fb3d81f1e6dd808);
+            
+    
+            var marker_6b8b777079e70e9c7954ce8252171a30 = L.marker(
+                [-25.438266, -49.2063522],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_7ded03a38241625d8ac86affcc56d425 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b287f98c81a538bced7d5b2245a647c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14c669b052d2208501d3e0b22f79bbb4 = $(`<div id="html_14c669b052d2208501d3e0b22f79bbb4" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Benedito França, 259, Curitiba, PR<br>         Preço: R$ 990,000 | Área: 283.0 m²<br>         Valor/m²: R$ 3498/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS990000/id-30214501/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b287f98c81a538bced7d5b2245a647c4.setContent(html_14c669b052d2208501d3e0b22f79bbb4);
+            
+        
+
+        marker_6b8b777079e70e9c7954ce8252171a30.bindPopup(popup_b287f98c81a538bced7d5b2245a647c4)
+        ;
+
+        
+    
+    
+                marker_6b8b777079e70e9c7954ce8252171a30.setIcon(icon_7ded03a38241625d8ac86affcc56d425);
+            
+    
+            var marker_7d461b9b612af6ccf60cf0ee18966ae1 = L.marker(
+                [-25.4381483, -49.2064134],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_b9cf4c1ab965fd2a19d903f176358880 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edaf30522f9055c8b777a549ed3f9bae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6b7c6fae6005de6325fe3f8c13d1a4b = $(`<div id="html_d6b7c6fae6005de6325fe3f8c13d1a4b" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, 1351, Curitiba, PR<br>         Preço: R$ 990,000 | Área: 268.0 m²<br>         Valor/m²: R$ 3694/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-268m2-RS990000/id-32885561/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_edaf30522f9055c8b777a549ed3f9bae.setContent(html_d6b7c6fae6005de6325fe3f8c13d1a4b);
+            
+        
+
+        marker_7d461b9b612af6ccf60cf0ee18966ae1.bindPopup(popup_edaf30522f9055c8b777a549ed3f9bae)
+        ;
+
+        
+    
+    
+                marker_7d461b9b612af6ccf60cf0ee18966ae1.setIcon(icon_b9cf4c1ab965fd2a19d903f176358880);
+            
+    
+            var marker_bc3ea4897c8b86e03d8cefada28b4f00 = L.marker(
+                [-25.4368942, -49.2050055],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_4d7ee35dce68fe28e409f1f08d4fe597 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a64b27eaed5f956ac6fcc460eb58ae9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62081ca483be3e2d672b9b828ea76126 = $(`<div id="html_62081ca483be3e2d672b9b828ea76126" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Capitão Varassin, Curitiba, PR<br>         Preço: R$ 995,000 | Área: 240.0 m²<br>         Valor/m²: R$ 4146/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-360m2-RS995000/id-24147920/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a64b27eaed5f956ac6fcc460eb58ae9c.setContent(html_62081ca483be3e2d672b9b828ea76126);
+            
+        
+
+        marker_bc3ea4897c8b86e03d8cefada28b4f00.bindPopup(popup_a64b27eaed5f956ac6fcc460eb58ae9c)
+        ;
+
+        
+    
+    
+                marker_bc3ea4897c8b86e03d8cefada28b4f00.setIcon(icon_4d7ee35dce68fe28e409f1f08d4fe597);
+            
+    
+            var marker_380a62769a7ef71b7ee1d7017b016e15 = L.marker(
+                [-25.4376966, -49.2300635],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_516034796eeb1a5b1fc38871c7b0038f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1768e26278b291711dd1994b5abb8148 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31566433b0e8f58f2c3d27252053ffaa = $(`<div id="html_31566433b0e8f58f2c3d27252053ffaa" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Jorge Batista Crocetti, 408, Curitiba, PR<br>         Preço: R$ 998,000 | Área: 266.0 m²<br>         Valor/m²: R$ 3752/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-266m2-RS998000/id-26300540/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_1768e26278b291711dd1994b5abb8148.setContent(html_31566433b0e8f58f2c3d27252053ffaa);
+            
+        
+
+        marker_380a62769a7ef71b7ee1d7017b016e15.bindPopup(popup_1768e26278b291711dd1994b5abb8148)
+        ;
+
+        
+    
+    
+                marker_380a62769a7ef71b7ee1d7017b016e15.setIcon(icon_516034796eeb1a5b1fc38871c7b0038f);
+            
+    
+            var marker_39262a7146d54be0f587c831afdf016e = L.marker(
+                [-25.4351499, -49.2164159],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_5a0e7307f341a21090baad8d43cf29e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2d90b60cd5a8e46d5bfeccd7e514e42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9def80e894b2ca59ba621743739e198d = $(`<div id="html_9def80e894b2ca59ba621743739e198d" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Osmário De Lima, 310, Curitiba, PR<br>         Preço: R$ 1,520,000 | Área: 400.0 m²<br>         Valor/m²: R$ 3800/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 6.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-600m2-RS1520000/id-18605261/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b2d90b60cd5a8e46d5bfeccd7e514e42.setContent(html_9def80e894b2ca59ba621743739e198d);
+            
+        
+
+        marker_39262a7146d54be0f587c831afdf016e.bindPopup(popup_b2d90b60cd5a8e46d5bfeccd7e514e42)
+        ;
+
+        
+    
+    
+                marker_39262a7146d54be0f587c831afdf016e.setIcon(icon_5a0e7307f341a21090baad8d43cf29e0);
+            
+    
+            var marker_8e5f6746eb22aa6419860ae9c7f68d5d = L.marker(
+                [-25.4367318, -49.2228326],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_5317091cf1110943cdcb0ff003ce2ada = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a37256516a11d66dbffb92effe116801 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61995b538dbcdea9674dd2fff41285bc = $(`<div id="html_61995b538dbcdea9674dd2fff41285bc" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Octávio Schiavon, 500, Curitiba, PR<br>         Preço: R$ 1,670,000 | Área: 420.0 m²<br>         Valor/m²: R$ 3976/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 7.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-540m2-RS1670000/id-10550433/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a37256516a11d66dbffb92effe116801.setContent(html_61995b538dbcdea9674dd2fff41285bc);
+            
+        
+
+        marker_8e5f6746eb22aa6419860ae9c7f68d5d.bindPopup(popup_a37256516a11d66dbffb92effe116801)
+        ;
+
+        
+    
+    
+                marker_8e5f6746eb22aa6419860ae9c7f68d5d.setIcon(icon_5317091cf1110943cdcb0ff003ce2ada);
+            
+    
+            var marker_1acd330aba7a680d484d465d4dd4ccc9 = L.marker(
+                [-25.4376543, -49.2289907],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_fb197dfccf1d74baee219007d418be7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_362e8344219b16c8e3bf517e6037ac6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b8f013c36039c8349fc619ea7e604c7 = $(`<div id="html_8b8f013c36039c8349fc619ea7e604c7" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antônio Simm, Curitiba, PR<br>         Preço: R$ 1,700,000 | Área: 405.0 m²<br>         Valor/m²: R$ 4198/m²<br>         Quartos: 5 | Banheiros: 3 | Vagas: 8.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-768m2-RS1700000/id-28988142/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_362e8344219b16c8e3bf517e6037ac6a.setContent(html_8b8f013c36039c8349fc619ea7e604c7);
+            
+        
+
+        marker_1acd330aba7a680d484d465d4dd4ccc9.bindPopup(popup_362e8344219b16c8e3bf517e6037ac6a)
+        ;
+
+        
+    
+    
+                marker_1acd330aba7a680d484d465d4dd4ccc9.setIcon(icon_fb197dfccf1d74baee219007d418be7e);
+            
+    
+            var marker_25780c020c23aec42c1be58064a9af5b = L.marker(
+                [-25.4368386, -49.226299],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_6c2f02df9aafa848cdb40401ed728103 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b45152aa419c8aa011c0434a4d5182ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2acfc94731ac8c6f493cb01cd4c6a9c7 = $(`<div id="html_2acfc94731ac8c6f493cb01cd4c6a9c7" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Sétimo Simionato, Curitiba, PR<br>         Preço: R$ 1,899,000 | Área: 474.0 m²<br>         Valor/m²: R$ 4006/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-474m2-RS1899000/id-15233158/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b45152aa419c8aa011c0434a4d5182ec.setContent(html_2acfc94731ac8c6f493cb01cd4c6a9c7);
+            
+        
+
+        marker_25780c020c23aec42c1be58064a9af5b.bindPopup(popup_b45152aa419c8aa011c0434a4d5182ec)
+        ;
+
+        
+    
+    
+                marker_25780c020c23aec42c1be58064a9af5b.setIcon(icon_6c2f02df9aafa848cdb40401ed728103);
+            
+    
+            var marker_d33c8f5e3ee133355f9251bc7cc9c59f = L.marker(
+                [-25.4358924, -49.2294199],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_126f0b8ba8bee2523ed03b13784d8010 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9689ea3530c07bc3456c88e399d058d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_324cf66bd012513c96c016e2d9b91345 = $(`<div id="html_324cf66bd012513c96c016e2d9b91345" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antônio Simm, 489, Curitiba, PR<br>         Preço: R$ 1,990,000 | Área: 465.0 m²<br>         Valor/m²: R$ 4280/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 7.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-465m2-RS1990000/id-30298358/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9689ea3530c07bc3456c88e399d058d2.setContent(html_324cf66bd012513c96c016e2d9b91345);
+            
+        
+
+        marker_d33c8f5e3ee133355f9251bc7cc9c59f.bindPopup(popup_9689ea3530c07bc3456c88e399d058d2)
+        ;
+
+        
+    
+    
+                marker_d33c8f5e3ee133355f9251bc7cc9c59f.setIcon(icon_126f0b8ba8bee2523ed03b13784d8010);
+            
+    
+            var marker_7f15cc4f789c0403fd39c43e456194cf = L.marker(
+                [-25.4415602, -49.2125075],
+                {
+}
+            ).addTo(marker_cluster_981b8542f26e9c94db1c2caa7b1d6912);
+        
+    
+            var icon_83086206b8d7c3720fbbb373eca4eac1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58e770c80c68d52411d4a52ff589b13d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a254295e8f0b1798ff39502ddf81b05c = $(`<div id="html_a254295e8f0b1798ff39502ddf81b05c" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Delegado Leopoldo Belczak, 650, Curitiba, PR<br>         Preço: R$ 2,200,000 | Área: 610.0 m²<br>         Valor/m²: R$ 3607/m²<br>         Quartos: 5 | Banheiros: 5 | Vagas: 8.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-610m2-RS2200000/id-30448088/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_58e770c80c68d52411d4a52ff589b13d.setContent(html_a254295e8f0b1798ff39502ddf81b05c);
+            
+        
+
+        marker_7f15cc4f789c0403fd39c43e456194cf.bindPopup(popup_58e770c80c68d52411d4a52ff589b13d)
+        ;
+
+        
+    
+    
+                marker_7f15cc4f789c0403fd39c43e456194cf.setIcon(icon_83086206b8d7c3720fbbb373eca4eac1);
+            
+    
+            marker_cluster_981b8542f26e9c94db1c2caa7b1d6912.addTo(feature_group_333232295a46c956e48b0beaa3c8cb80);
+        
+    
+            feature_group_333232295a46c956e48b0beaa3c8cb80.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var feature_group_6bd3c48dd0d83415307dca78b6ea0a89 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f7e03d2566e0f8ab4c6bfc42ec2c164f = L.marker(
+                [-25.4356837, -49.217356],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_ba989c617e56f6cc4e12b15b70eb47ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cc4ca082aaa40f45e890e157e22cc45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5ae78f9c08c9d20937db8b6c185ecc = $(`<div id="html_0c5ae78f9c08c9d20937db8b6c185ecc" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Frederico Stadler Júnior, 249, Curitiba, PR<br>         Preço: R$ 374,000 | Área: 85.0 m²<br>         Valor/m²: R$ 4400/m²<br>         Quartos: 2 | Banheiros: 1 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-2-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS374000/id-32594470/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9cc4ca082aaa40f45e890e157e22cc45.setContent(html_0c5ae78f9c08c9d20937db8b6c185ecc);
+            
+        
+
+        marker_f7e03d2566e0f8ab4c6bfc42ec2c164f.bindPopup(popup_9cc4ca082aaa40f45e890e157e22cc45)
+        ;
+
+        
+    
+    
+                marker_f7e03d2566e0f8ab4c6bfc42ec2c164f.setIcon(icon_ba989c617e56f6cc4e12b15b70eb47ef);
+            
+    
+            var marker_d589dfc3ccc602e189402f9b9e218748 = L.marker(
+                [-25.4341989, -49.2046742],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_ddeb37028bcebcbadb07a6e7b444e1dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba39d083fa18f4e86b6f7727c0045d4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a64102a0ee57e5b8517b7179566e700f = $(`<div id="html_a64102a0ee57e5b8517b7179566e700f" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Padre José Edmundo Dilly, Curitiba, PR<br>         Preço: R$ 449,000 | Área: 88.0 m²<br>         Valor/m²: R$ 5102/m²<br>         Quartos: 4 | Banheiros: 1 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-com-garagem-pr-curitiba-capao-da-imbuia-88m2-RS449000/id-24263588/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_ba39d083fa18f4e86b6f7727c0045d4d.setContent(html_a64102a0ee57e5b8517b7179566e700f);
+            
+        
+
+        marker_d589dfc3ccc602e189402f9b9e218748.bindPopup(popup_ba39d083fa18f4e86b6f7727c0045d4d)
+        ;
+
+        
+    
+    
+                marker_d589dfc3ccc602e189402f9b9e218748.setIcon(icon_ddeb37028bcebcbadb07a6e7b444e1dc);
+            
+    
+            var marker_b7f72148f39786243597b385635c1e4a = L.marker(
+                [-25.4397003, -49.2104922],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_5dd6c7c8f4ea9b6dbe007681470f7616 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66467f02fe0405a07bfa68c13042258f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_242be6e3bd1da5f3a160fdda06d0a484 = $(`<div id="html_242be6e3bd1da5f3a160fdda06d0a484" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua João Ponciano Borges, 720, Curitiba, PR<br>         Preço: R$ 599,000 | Área: 137.0 m²<br>         Valor/m²: R$ 4372/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-137m2-RS599000/id-25267515/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_66467f02fe0405a07bfa68c13042258f.setContent(html_242be6e3bd1da5f3a160fdda06d0a484);
+            
+        
+
+        marker_b7f72148f39786243597b385635c1e4a.bindPopup(popup_66467f02fe0405a07bfa68c13042258f)
+        ;
+
+        
+    
+    
+                marker_b7f72148f39786243597b385635c1e4a.setIcon(icon_5dd6c7c8f4ea9b6dbe007681470f7616);
+            
+    
+            var marker_53f9bf544885e9a5ff0c49b14da6259c = L.marker(
+                [-25.4420587, -49.2208559],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_8a97dc5dae0c8b22e6882f004c0e673a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0710fd7d78c33e4721c98495c1284945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99f1cf1908778b1c958e0cca3ef280ce = $(`<div id="html_99f1cf1908778b1c958e0cca3ef280ce" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Pandiá Calógeras, 683, Curitiba, PR<br>         Preço: R$ 600,000 | Área: 137.0 m²<br>         Valor/m²: R$ 4380/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-cajuru-137m2-RS600000/id-6962843/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_0710fd7d78c33e4721c98495c1284945.setContent(html_99f1cf1908778b1c958e0cca3ef280ce);
+            
+        
+
+        marker_53f9bf544885e9a5ff0c49b14da6259c.bindPopup(popup_0710fd7d78c33e4721c98495c1284945)
+        ;
+
+        
+    
+    
+                marker_53f9bf544885e9a5ff0c49b14da6259c.setIcon(icon_8a97dc5dae0c8b22e6882f004c0e673a);
+            
+    
+            var marker_9e1050fb7f05f29dc59b7f3a57c573d9 = L.marker(
+                [-25.4382258, -49.2224958],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_813a846664d40d2ad0d80081e17181d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dc7be455f52fa1d4c82b73daeaa6e2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_381b318251404ecede0155dbe4e23ff6 = $(`<div id="html_381b318251404ecede0155dbe4e23ff6" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Francisco Mota Machado, 1155, Curitiba, PR<br>         Preço: R$ 690,000 | Área: 144.0 m²<br>         Valor/m²: R$ 4792/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS690000/id-30566918/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_2dc7be455f52fa1d4c82b73daeaa6e2b.setContent(html_381b318251404ecede0155dbe4e23ff6);
+            
+        
+
+        marker_9e1050fb7f05f29dc59b7f3a57c573d9.bindPopup(popup_2dc7be455f52fa1d4c82b73daeaa6e2b)
+        ;
+
+        
+    
+    
+                marker_9e1050fb7f05f29dc59b7f3a57c573d9.setIcon(icon_813a846664d40d2ad0d80081e17181d2);
+            
+    
+            var marker_b762b55464e3933f592c62de57bd2df4 = L.marker(
+                [-25.4347144, -49.215695],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_078c96cea94af481c8a5894bfe73c8da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f197a11447560dd90ac35348b9510a71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42ec7b4f3adea4743ff99be6bedaa0b8 = $(`<div id="html_42ec7b4f3adea4743ff99be6bedaa0b8" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Carlos Coelho Júnior, Curitiba, PR<br>         Preço: R$ 750,000 | Área: 164.0 m²<br>         Valor/m²: R$ 4573/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-210m2-RS750000/id-28053577/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_f197a11447560dd90ac35348b9510a71.setContent(html_42ec7b4f3adea4743ff99be6bedaa0b8);
+            
+        
+
+        marker_b762b55464e3933f592c62de57bd2df4.bindPopup(popup_f197a11447560dd90ac35348b9510a71)
+        ;
+
+        
+    
+    
+                marker_b762b55464e3933f592c62de57bd2df4.setIcon(icon_078c96cea94af481c8a5894bfe73c8da);
+            
+    
+            var marker_962ea43fafc6e334a3130192713b27ce = L.marker(
+                [-25.4399987, -49.2146582],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_ef864ee7a68e68b2cbccea004d623156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_befc1a185a58e890f68185ea9af6aa06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ec7929bcc0b243b750b4e120efaca0b = $(`<div id="html_0ec7929bcc0b243b750b4e120efaca0b" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Coronel Arthur Ferreira De Abreu, Curitiba, PR<br>         Preço: R$ 780,000 | Área: 170.0 m²<br>         Valor/m²: R$ 4588/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-pr-curitiba-capao-da-imbuia-170m2-RS780000/id-29904344/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_befc1a185a58e890f68185ea9af6aa06.setContent(html_0ec7929bcc0b243b750b4e120efaca0b);
+            
+        
+
+        marker_962ea43fafc6e334a3130192713b27ce.bindPopup(popup_befc1a185a58e890f68185ea9af6aa06)
+        ;
+
+        
+    
+    
+                marker_962ea43fafc6e334a3130192713b27ce.setIcon(icon_ef864ee7a68e68b2cbccea004d623156);
+            
+    
+            var marker_e76b36a6d965549a388ad40abafde61f = L.marker(
+                [-25.4399987, -49.2146582],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_2c579bb9df2dcb8b91a7a66dc187d78b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8961f757134888eefe6847a5a982da69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12637110d4412293525c5c5321adbf07 = $(`<div id="html_12637110d4412293525c5c5321adbf07" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Coronel Arthur Ferreira De Abreu, 211, Curitiba, PR<br>         Preço: R$ 799,000 | Área: 180.0 m²<br>         Valor/m²: R$ 4439/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS799000/id-18945766/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_8961f757134888eefe6847a5a982da69.setContent(html_12637110d4412293525c5c5321adbf07);
+            
+        
+
+        marker_e76b36a6d965549a388ad40abafde61f.bindPopup(popup_8961f757134888eefe6847a5a982da69)
+        ;
+
+        
+    
+    
+                marker_e76b36a6d965549a388ad40abafde61f.setIcon(icon_2c579bb9df2dcb8b91a7a66dc187d78b);
+            
+    
+            var marker_6126b616822553028606efd2f08ec54a = L.marker(
+                [-25.4394903, -49.2187972],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_b6a694c609824bd2c92f3a7c24e0b421 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46e802f1baaef6c37948fbe487e20e3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_158ac15f100118251297e3fb0d019c81 = $(`<div id="html_158ac15f100118251297e3fb0d019c81" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua José Ferreira, 124, Curitiba, PR<br>         Preço: R$ 890,000 | Área: 181.0 m²<br>         Valor/m²: R$ 4917/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-306m2-RS890000/id-26477521/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_46e802f1baaef6c37948fbe487e20e3b.setContent(html_158ac15f100118251297e3fb0d019c81);
+            
+        
+
+        marker_6126b616822553028606efd2f08ec54a.bindPopup(popup_46e802f1baaef6c37948fbe487e20e3b)
+        ;
+
+        
+    
+    
+                marker_6126b616822553028606efd2f08ec54a.setIcon(icon_b6a694c609824bd2c92f3a7c24e0b421);
+            
+    
+            var marker_c65f401a101740417628d63a81815f04 = L.marker(
+                [-25.4449806, -49.2233006],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_ea1cc554df829956496362c436c35de4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7176ccb8bbbcafb937e7340340010c81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f382fec3d2ae8fbf6f81f10add0b2e82 = $(`<div id="html_f382fec3d2ae8fbf6f81f10add0b2e82" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Professor Nivaldo Braga, 1245, Curitiba, PR<br>         Preço: R$ 890,000 | Área: 200.0 m²<br>         Valor/m²: R$ 4450/m²<br>         Quartos: 4 | Banheiros: 2 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-pr-curitiba-capao-da-imbuia-384m2-RS890000/id-19880143/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_7176ccb8bbbcafb937e7340340010c81.setContent(html_f382fec3d2ae8fbf6f81f10add0b2e82);
+            
+        
+
+        marker_c65f401a101740417628d63a81815f04.bindPopup(popup_7176ccb8bbbcafb937e7340340010c81)
+        ;
+
+        
+    
+    
+                marker_c65f401a101740417628d63a81815f04.setIcon(icon_ea1cc554df829956496362c436c35de4);
+            
+    
+            var marker_c02aa2df71f03c5f57a83ac408063e59 = L.marker(
+                [-25.4359377, -49.2054842],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_3c12d15757ae10046ca243d15a972426 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d61b4863f839709f6e0888de360f467 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe90aa340903aa7a9613442ca73b3c54 = $(`<div id="html_fe90aa340903aa7a9613442ca73b3c54" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, Curitiba, PR<br>         Preço: R$ 899,000 | Área: 190.0 m²<br>         Valor/m²: R$ 4732/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-400m2-RS899000/id-22790998/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_0d61b4863f839709f6e0888de360f467.setContent(html_fe90aa340903aa7a9613442ca73b3c54);
+            
+        
+
+        marker_c02aa2df71f03c5f57a83ac408063e59.bindPopup(popup_0d61b4863f839709f6e0888de360f467)
+        ;
+
+        
+    
+    
+                marker_c02aa2df71f03c5f57a83ac408063e59.setIcon(icon_3c12d15757ae10046ca243d15a972426);
+            
+    
+            var marker_9de0c55ae914d3c411fd1be5253949e6 = L.marker(
+                [-25.4362187, -49.2051652],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_25257e2cdc519c1bf0fbdac46e2e8afe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d5f6de4c7f253d828f3bf651b591070 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7469c5ecd02340c85fa296d4ccdf75be = $(`<div id="html_7469c5ecd02340c85fa296d4ccdf75be" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Casimiro Tosi, 304, Curitiba, PR<br>         Preço: R$ 900,000 | Área: 190.0 m²<br>         Valor/m²: R$ 4737/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-400m2-RS900000/id-19523386/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9d5f6de4c7f253d828f3bf651b591070.setContent(html_7469c5ecd02340c85fa296d4ccdf75be);
+            
+        
+
+        marker_9de0c55ae914d3c411fd1be5253949e6.bindPopup(popup_9d5f6de4c7f253d828f3bf651b591070)
+        ;
+
+        
+    
+    
+                marker_9de0c55ae914d3c411fd1be5253949e6.setIcon(icon_25257e2cdc519c1bf0fbdac46e2e8afe);
+            
+    
+            var marker_49bbe623146f80858577c88953a97685 = L.marker(
+                [-25.4360065, -49.215391],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_276892c3d6960ac5144eb399f38ad4aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e17cbb96e3ceca643b15c1e224bf32bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_790db0feafbc625f8be369b6403b2bed = $(`<div id="html_790db0feafbc625f8be369b6403b2bed" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Humberto Mattana, 97, Curitiba, PR<br>         Preço: R$ 950,000 | Área: 185.0 m²<br>         Valor/m²: R$ 5135/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-185m2-RS950000/id-29267947/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_e17cbb96e3ceca643b15c1e224bf32bd.setContent(html_790db0feafbc625f8be369b6403b2bed);
+            
+        
+
+        marker_49bbe623146f80858577c88953a97685.bindPopup(popup_e17cbb96e3ceca643b15c1e224bf32bd)
+        ;
+
+        
+    
+    
+                marker_49bbe623146f80858577c88953a97685.setIcon(icon_276892c3d6960ac5144eb399f38ad4aa);
+            
+    
+            var marker_025ed923620b7438826dc8c2be47d078 = L.marker(
+                [-25.4396734, -49.2112906],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_f1de2973d88a5497dd42a0ebb46a3244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8db36d48064ef83da7cc28655a07d882 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ac8401eb9c023f51bb00a532eff631b = $(`<div id="html_3ac8401eb9c023f51bb00a532eff631b" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Clávio Molinari, Curitiba, PR<br>         Preço: R$ 999,000 | Área: 200.0 m²<br>         Valor/m²: R$ 4995/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-200m2-RS999000/id-5513258/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_8db36d48064ef83da7cc28655a07d882.setContent(html_3ac8401eb9c023f51bb00a532eff631b);
+            
+        
+
+        marker_025ed923620b7438826dc8c2be47d078.bindPopup(popup_8db36d48064ef83da7cc28655a07d882)
+        ;
+
+        
+    
+    
+                marker_025ed923620b7438826dc8c2be47d078.setIcon(icon_f1de2973d88a5497dd42a0ebb46a3244);
+            
+    
+            var marker_824338ebc916c26ed7a5f1bb86d56a88 = L.marker(
+                [-25.4406214, -49.2158495],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_98691aa3a8f9365330c0a5e147124e1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77103799c2d067bf4e2708d92e6f824f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39bb1b1086e73f71ce154122a85123ef = $(`<div id="html_39bb1b1086e73f71ce154122a85123ef" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Tamboara, 70, Curitiba, PR<br>         Preço: R$ 1,029,000 | Área: 227.0 m²<br>         Valor/m²: R$ 4533/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-370m2-RS1029000/id-19380961/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_77103799c2d067bf4e2708d92e6f824f.setContent(html_39bb1b1086e73f71ce154122a85123ef);
+            
+        
+
+        marker_824338ebc916c26ed7a5f1bb86d56a88.bindPopup(popup_77103799c2d067bf4e2708d92e6f824f)
+        ;
+
+        
+    
+    
+                marker_824338ebc916c26ed7a5f1bb86d56a88.setIcon(icon_98691aa3a8f9365330c0a5e147124e1d);
+            
+    
+            var marker_3236bda2ff313bbbbdaa71965967c3ae = L.marker(
+                [-25.4366873, -49.2146689],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_aa9e81c119b71a292c44434329edb903 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3aae8e9e7f7273032939d4d5e989ed9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a8dd1dead3f0030c07d1cfc75cad40c = $(`<div id="html_0a8dd1dead3f0030c07d1cfc75cad40c" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Hayton Da Silva Pereira, 622, Curitiba, PR<br>         Preço: R$ 1,050,000 | Área: 210.0 m²<br>         Valor/m²: R$ 5000/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-210m2-RS1050000/id-31796005/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3aae8e9e7f7273032939d4d5e989ed9e.setContent(html_0a8dd1dead3f0030c07d1cfc75cad40c);
+            
+        
+
+        marker_3236bda2ff313bbbbdaa71965967c3ae.bindPopup(popup_3aae8e9e7f7273032939d4d5e989ed9e)
+        ;
+
+        
+    
+    
+                marker_3236bda2ff313bbbbdaa71965967c3ae.setIcon(icon_aa9e81c119b71a292c44434329edb903);
+            
+    
+            var marker_a926527aa360c4cd91b1954b5c34781c = L.marker(
+                [-25.4366382, -49.2118858],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_9ebe6cd55a8fd35fd2c7a27d719c8c53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b60be75d607be00ead17b18ecf9b2640 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_556e89e3ac1188a446be64f634f8641d = $(`<div id="html_556e89e3ac1188a446be64f634f8641d" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Sargento Octávio Hoglund, 41, Curitiba, PR<br>         Preço: R$ 1,100,000 | Área: 241.0 m²<br>         Valor/m²: R$ 4564/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-370m2-RS1100000/id-22466298/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b60be75d607be00ead17b18ecf9b2640.setContent(html_556e89e3ac1188a446be64f634f8641d);
+            
+        
+
+        marker_a926527aa360c4cd91b1954b5c34781c.bindPopup(popup_b60be75d607be00ead17b18ecf9b2640)
+        ;
+
+        
+    
+    
+                marker_a926527aa360c4cd91b1954b5c34781c.setIcon(icon_9ebe6cd55a8fd35fd2c7a27d719c8c53);
+            
+    
+            var marker_ba301908c9eee432519564feb64aca40 = L.marker(
+                [-25.4399987, -49.2146582],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_31161a34383c7f3b9a631127d910800d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a88564d45f03674175603e59984d1eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3581b26703e0df3e5e58d34b452266d = $(`<div id="html_a3581b26703e0df3e5e58d34b452266d" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Coronel Arthur Ferreira De Abreu, Curitiba, PR<br>         Preço: R$ 1,199,900 | Área: 234.0 m²<br>         Valor/m²: R$ 5128/m²<br>         Quartos: 4 | Banheiros: 1 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-300m2-RS1199900/id-7314295/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_7a88564d45f03674175603e59984d1eb.setContent(html_a3581b26703e0df3e5e58d34b452266d);
+            
+        
+
+        marker_ba301908c9eee432519564feb64aca40.bindPopup(popup_7a88564d45f03674175603e59984d1eb)
+        ;
+
+        
+    
+    
+                marker_ba301908c9eee432519564feb64aca40.setIcon(icon_31161a34383c7f3b9a631127d910800d);
+            
+    
+            var marker_9166ea06623765d255b4d32c6e383cca = L.marker(
+                [-25.4385356, -49.2250085],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_2e60294decdee03023660a9dd94c00ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a425a70d86449a2a341070648c2796b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6bbac45fb07855212df29bd680b94407 = $(`<div id="html_6bbac45fb07855212df29bd680b94407" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Avenida Presidente Affonso Camargo, 3881, Curitiba, PR<br>         Preço: R$ 1,490,000 | Área: 305.0 m²<br>         Valor/m²: R$ 4885/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 7.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-305m2-RS1490000/id-28539291/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a425a70d86449a2a341070648c2796b0.setContent(html_6bbac45fb07855212df29bd680b94407);
+            
+        
+
+        marker_9166ea06623765d255b4d32c6e383cca.bindPopup(popup_a425a70d86449a2a341070648c2796b0)
+        ;
+
+        
+    
+    
+                marker_9166ea06623765d255b4d32c6e383cca.setIcon(icon_2e60294decdee03023660a9dd94c00ca);
+            
+    
+            var marker_65d0f7b22ea58303af94c848f5f0493d = L.marker(
+                [-25.4327665, -49.2046178],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_a024809a50d62a5afd7df1d6d631cd8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0592261c7443a8178bf2176879f90dd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04fe7e5fee0159d751af08d4e744c054 = $(`<div id="html_04fe7e5fee0159d751af08d4e744c054" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Expedicionário Epitácio Peixoto De Morais, 32, Curitiba, PR<br>         Preço: R$ 1,650,000 | Área: 336.0 m²<br>         Valor/m²: R$ 4911/m²<br>         Quartos: 4 | Banheiros: 5 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-350m2-RS1650000/id-30980983/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_0592261c7443a8178bf2176879f90dd5.setContent(html_04fe7e5fee0159d751af08d4e744c054);
+            
+        
+
+        marker_65d0f7b22ea58303af94c848f5f0493d.bindPopup(popup_0592261c7443a8178bf2176879f90dd5)
+        ;
+
+        
+    
+    
+                marker_65d0f7b22ea58303af94c848f5f0493d.setIcon(icon_a024809a50d62a5afd7df1d6d631cd8d);
+            
+    
+            var marker_bcef08f72c3d58e8b56867b36e554ca6 = L.marker(
+                [-25.4397453, -49.2169437],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_bef31ee4f985cb7260ad99219c091260 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60beb35522195441f8f656aba008ff82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_764a680ad41b4ac9e0803acfc2e07158 = $(`<div id="html_764a680ad41b4ac9e0803acfc2e07158" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Delegado Leopoldo Belczak, 2064, Curitiba, PR<br>         Preço: R$ 1,800,000 | Área: 381.0 m²<br>         Valor/m²: R$ 4724/m²<br>         Quartos: 5 | Banheiros: 4 | Vagas: 6.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-381m2-RS1800000/id-18754680/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_60beb35522195441f8f656aba008ff82.setContent(html_764a680ad41b4ac9e0803acfc2e07158);
+            
+        
+
+        marker_bcef08f72c3d58e8b56867b36e554ca6.bindPopup(popup_60beb35522195441f8f656aba008ff82)
+        ;
+
+        
+    
+    
+                marker_bcef08f72c3d58e8b56867b36e554ca6.setIcon(icon_bef31ee4f985cb7260ad99219c091260);
+            
+    
+            var marker_aade676418ba65f2b017c882304b914c = L.marker(
+                [-25.4396183, -49.2353743],
+                {
+}
+            ).addTo(marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8);
+        
+    
+            var icon_3c8ca794f45d4142c42adb0a6978bbda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30065fd4b16fefbb961cbc104d3ad50f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f106a13b3d2d997d35c70edf62015a0 = $(`<div id="html_4f106a13b3d2d997d35c70edf62015a0" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Delegado Leopoldo Belczak, 46, Curitiba, PR<br>         Preço: R$ 2,990,000 | Área: 680.0 m²<br>         Valor/m²: R$ 4397/m²<br>         Quartos: 8 | Banheiros: 6 | Vagas: 10.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-8-quartos-com-garagem-pr-curitiba-capao-da-imbuia-680m2-RS2990000/id-32748989/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_30065fd4b16fefbb961cbc104d3ad50f.setContent(html_4f106a13b3d2d997d35c70edf62015a0);
+            
+        
+
+        marker_aade676418ba65f2b017c882304b914c.bindPopup(popup_30065fd4b16fefbb961cbc104d3ad50f)
+        ;
+
+        
+    
+    
+                marker_aade676418ba65f2b017c882304b914c.setIcon(icon_3c8ca794f45d4142c42adb0a6978bbda);
+            
+    
+            marker_cluster_69e7cba44d205a5f26f2fb2fc5c38cf8.addTo(feature_group_6bd3c48dd0d83415307dca78b6ea0a89);
+        
+    
+            feature_group_6bd3c48dd0d83415307dca78b6ea0a89.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var feature_group_f53c3b747f3d86e293941e0b344aa5ac = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_f7264111c63e9601809cf2c48f7d7213 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_952197a4d8467e3a392aa9c8cb224f50 = L.marker(
+                [-25.4374108, -49.2082561],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_595d68c2a26b914ce33c0b20f2baa543 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36d1d1c0f18ef79f069f147f967c9d7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_686d8b52195942a399c90cca83538110 = $(`<div id="html_686d8b52195942a399c90cca83538110" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, Curitiba, PR<br>         Preço: R$ 580,000 | Área: 99.0 m²<br>         Valor/m²: R$ 5859/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS580000/id-21692509/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_36d1d1c0f18ef79f069f147f967c9d7f.setContent(html_686d8b52195942a399c90cca83538110);
+            
+        
+
+        marker_952197a4d8467e3a392aa9c8cb224f50.bindPopup(popup_36d1d1c0f18ef79f069f147f967c9d7f)
+        ;
+
+        
+    
+    
+                marker_952197a4d8467e3a392aa9c8cb224f50.setIcon(icon_595d68c2a26b914ce33c0b20f2baa543);
+            
+    
+            var marker_fee3fad40c9562d82b9b6d09bb874b35 = L.marker(
+                [-25.4395393, -49.2183822],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_06c154d4977bc2382747ffe54584ecd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3656ee193f2bd2383c31a77c9ba4bb65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca46b1cebf2d278c80c05b1df188b675 = $(`<div id="html_ca46b1cebf2d278c80c05b1df188b675" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Professora Olga Balster, 923, Curitiba, PR<br>         Preço: R$ 660,000 | Área: 114.0 m²<br>         Valor/m²: R$ 5789/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-114m2-RS660000/id-30963804/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3656ee193f2bd2383c31a77c9ba4bb65.setContent(html_ca46b1cebf2d278c80c05b1df188b675);
+            
+        
+
+        marker_fee3fad40c9562d82b9b6d09bb874b35.bindPopup(popup_3656ee193f2bd2383c31a77c9ba4bb65)
+        ;
+
+        
+    
+    
+                marker_fee3fad40c9562d82b9b6d09bb874b35.setIcon(icon_06c154d4977bc2382747ffe54584ecd6);
+            
+    
+            var marker_67629c3f064bd7cc78aab87c9bc5aa6f = L.marker(
+                [-25.4419119, -49.2060774],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_cc5fa92897a656d4f510ba308e23a46a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76f1531fab4faa2874749a2d7bed3af8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8e48e7fbdd9638eb03307934dfcb647 = $(`<div id="html_c8e48e7fbdd9638eb03307934dfcb647" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Clávio Molinari, 1407, Curitiba, PR<br>         Preço: R$ 699,000 | Área: 125.0 m²<br>         Valor/m²: R$ 5592/m²<br>         Quartos: 4 | Banheiros: 2 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-pr-curitiba-capao-da-imbuia-200m2-RS699000/id-29878476/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_76f1531fab4faa2874749a2d7bed3af8.setContent(html_c8e48e7fbdd9638eb03307934dfcb647);
+            
+        
+
+        marker_67629c3f064bd7cc78aab87c9bc5aa6f.bindPopup(popup_76f1531fab4faa2874749a2d7bed3af8)
+        ;
+
+        
+    
+    
+                marker_67629c3f064bd7cc78aab87c9bc5aa6f.setIcon(icon_cc5fa92897a656d4f510ba308e23a46a);
+            
+    
+            var marker_2ca6b8ebb844e7f107ac4b3ae8a423c0 = L.marker(
+                [-25.441677, -49.2113825],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_49af28cbaaaeac2814ad6be22c067afc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d969ff2cc18b5a2ac38559e2ef9a219 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d4c76bb2041afff4e49f38ff1c383d2 = $(`<div id="html_5d4c76bb2041afff4e49f38ff1c383d2" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua João Ponciano Borges, 262, Curitiba, PR<br>         Preço: R$ 699,000 | Área: 128.0 m²<br>         Valor/m²: R$ 5461/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS699000/id-10613965/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_4d969ff2cc18b5a2ac38559e2ef9a219.setContent(html_5d4c76bb2041afff4e49f38ff1c383d2);
+            
+        
+
+        marker_2ca6b8ebb844e7f107ac4b3ae8a423c0.bindPopup(popup_4d969ff2cc18b5a2ac38559e2ef9a219)
+        ;
+
+        
+    
+    
+                marker_2ca6b8ebb844e7f107ac4b3ae8a423c0.setIcon(icon_49af28cbaaaeac2814ad6be22c067afc);
+            
+    
+            var marker_1db3755cafce7b5d8c9184638b8e4ee2 = L.marker(
+                [-25.4348641, -49.2047823],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_5cc69a58a300d11337c9520cea2b584e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f5e9aab3122d2531f409fda445c0bf0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce4a6b885461759e3b8f75a1cb61f5be = $(`<div id="html_ce4a6b885461759e3b8f75a1cb61f5be" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Rosi Lopes Collere, Curitiba, PR<br>         Preço: R$ 749,000 | Área: 143.0 m²<br>         Valor/m²: R$ 5238/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-203m2-RS749000/id-24503289/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3f5e9aab3122d2531f409fda445c0bf0.setContent(html_ce4a6b885461759e3b8f75a1cb61f5be);
+            
+        
+
+        marker_1db3755cafce7b5d8c9184638b8e4ee2.bindPopup(popup_3f5e9aab3122d2531f409fda445c0bf0)
+        ;
+
+        
+    
+    
+                marker_1db3755cafce7b5d8c9184638b8e4ee2.setIcon(icon_5cc69a58a300d11337c9520cea2b584e);
+            
+    
+            var marker_2f0031b7d6415f953367313063776b64 = L.marker(
+                [-25.4376543, -49.2289907],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_69a6ed2edfd0e816371f80dc01636479 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aca45165835b3a3442fc777cc5d30db6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a60d868f7bd0c31061e77122e91d8fad = $(`<div id="html_a60d868f7bd0c31061e77122e91d8fad" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Antônio Simm, 162, Curitiba, PR<br>         Preço: R$ 770,000 | Área: 126.0 m²<br>         Valor/m²: R$ 6111/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-126m2-RS770000/id-30676446/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_aca45165835b3a3442fc777cc5d30db6.setContent(html_a60d868f7bd0c31061e77122e91d8fad);
+            
+        
+
+        marker_2f0031b7d6415f953367313063776b64.bindPopup(popup_aca45165835b3a3442fc777cc5d30db6)
+        ;
+
+        
+    
+    
+                marker_2f0031b7d6415f953367313063776b64.setIcon(icon_69a6ed2edfd0e816371f80dc01636479);
+            
+    
+            var marker_7de763fc94a73c3648e8c6bc43a82817 = L.marker(
+                [-25.4391206, -49.2192263],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_186a664b25cfb2c798360e0956860da2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8bdbce67b3a9a48b6aab90bc20c3bcd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d28f1ce1214f73bf16d3c175a721d9bc = $(`<div id="html_d28f1ce1214f73bf16d3c175a721d9bc" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua José Ferreira, 75, Curitiba, PR<br>         Preço: R$ 780,000 | Área: 147.0 m²<br>         Valor/m²: R$ 5306/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS780000/id-8279357/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a8bdbce67b3a9a48b6aab90bc20c3bcd.setContent(html_d28f1ce1214f73bf16d3c175a721d9bc);
+            
+        
+
+        marker_7de763fc94a73c3648e8c6bc43a82817.bindPopup(popup_a8bdbce67b3a9a48b6aab90bc20c3bcd)
+        ;
+
+        
+    
+    
+                marker_7de763fc94a73c3648e8c6bc43a82817.setIcon(icon_186a664b25cfb2c798360e0956860da2);
+            
+    
+            var marker_d78194a7e36da8200430504a7f8f9773 = L.marker(
+                [-25.4399987, -49.2146582],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_a2a6e9a65292ef21f0b4325f4196c193 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b90874ad804c8ae39d72fd6eead4d230 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df1a158ecf7aa158d575eb3a23aff194 = $(`<div id="html_df1a158ecf7aa158d575eb3a23aff194" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Coronel Arthur Ferreira De Abreu, 865, Curitiba, PR<br>         Preço: R$ 890,000 | Área: 160.0 m²<br>         Valor/m²: R$ 5562/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-160m2-RS890000/id-30525593/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b90874ad804c8ae39d72fd6eead4d230.setContent(html_df1a158ecf7aa158d575eb3a23aff194);
+            
+        
+
+        marker_d78194a7e36da8200430504a7f8f9773.bindPopup(popup_b90874ad804c8ae39d72fd6eead4d230)
+        ;
+
+        
+    
+    
+                marker_d78194a7e36da8200430504a7f8f9773.setIcon(icon_a2a6e9a65292ef21f0b4325f4196c193);
+            
+    
+            var marker_1953dbd8f6afd99d10060d3994995349 = L.marker(
+                [-25.4399987, -49.2146582],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_67e56fdc724c2faae9fd734bcca38e0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6492ec03744cdddc6ee7e314af0b23e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f687972218d4a66803cecf97751010a5 = $(`<div id="html_f687972218d4a66803cecf97751010a5" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Coronel Arthur Ferreira De Abreu, 860, Curitiba, PR<br>         Preço: R$ 890,000 | Área: 150.0 m²<br>         Valor/m²: R$ 5933/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS890000/id-28636416/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_6492ec03744cdddc6ee7e314af0b23e8.setContent(html_f687972218d4a66803cecf97751010a5);
+            
+        
+
+        marker_1953dbd8f6afd99d10060d3994995349.bindPopup(popup_6492ec03744cdddc6ee7e314af0b23e8)
+        ;
+
+        
+    
+    
+                marker_1953dbd8f6afd99d10060d3994995349.setIcon(icon_67e56fdc724c2faae9fd734bcca38e0a);
+            
+    
+            var marker_a512f29900de86c50da7c35b846159b6 = L.marker(
+                [-25.4396547, -49.2250291],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_59dc4a06cd5f4359afa624a37d1ee991 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28876908488f9e658351ef4e7ff5151c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7b8d4ba77cb006bcd800025638eaa86 = $(`<div id="html_b7b8d4ba77cb006bcd800025638eaa86" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Bine Gersten Reiss, 18, Curitiba, PR<br>         Preço: R$ 899,000 | Área: 174.0 m²<br>         Valor/m²: R$ 5167/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-182m2-RS899000/id-30089951/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_28876908488f9e658351ef4e7ff5151c.setContent(html_b7b8d4ba77cb006bcd800025638eaa86);
+            
+        
+
+        marker_a512f29900de86c50da7c35b846159b6.bindPopup(popup_28876908488f9e658351ef4e7ff5151c)
+        ;
+
+        
+    
+    
+                marker_a512f29900de86c50da7c35b846159b6.setIcon(icon_59dc4a06cd5f4359afa624a37d1ee991);
+            
+    
+            var marker_ecc7ca67ae1db1cb371bc2f3924b12ad = L.marker(
+                [-25.4373463, -49.2291675],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_cf39a698742a0138a35e4f152ed19de0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_894f7e7d87f61b4dcdd7d18a7df5a458 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27e3a89746d2ab3648676c3f48268974 = $(`<div id="html_27e3a89746d2ab3648676c3f48268974" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antônio Simm, 313, Curitiba, PR<br>         Preço: R$ 930,000 | Área: 170.0 m²<br>         Valor/m²: R$ 5471/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS930000/id-32335584/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_894f7e7d87f61b4dcdd7d18a7df5a458.setContent(html_27e3a89746d2ab3648676c3f48268974);
+            
+        
+
+        marker_ecc7ca67ae1db1cb371bc2f3924b12ad.bindPopup(popup_894f7e7d87f61b4dcdd7d18a7df5a458)
+        ;
+
+        
+    
+    
+                marker_ecc7ca67ae1db1cb371bc2f3924b12ad.setIcon(icon_cf39a698742a0138a35e4f152ed19de0);
+            
+    
+            var marker_bc8a25f413d8699ab031e58a2796968f = L.marker(
+                [-25.4339515, -49.2151902],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_79a9b5d22ebf6beb4dc0dc0f2d903b7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bdf392c138f9acd11513cff920cd4a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06dd8def7678cbaf756134d740802e24 = $(`<div id="html_06dd8def7678cbaf756134d740802e24" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Professora Olga Balster, 2370, Curitiba, PR<br>         Preço: R$ 935,000 | Área: 170.0 m²<br>         Valor/m²: R$ 5500/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 6.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-312m2-RS935000/id-3043910/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_2bdf392c138f9acd11513cff920cd4a3.setContent(html_06dd8def7678cbaf756134d740802e24);
+            
+        
+
+        marker_bc8a25f413d8699ab031e58a2796968f.bindPopup(popup_2bdf392c138f9acd11513cff920cd4a3)
+        ;
+
+        
+    
+    
+                marker_bc8a25f413d8699ab031e58a2796968f.setIcon(icon_79a9b5d22ebf6beb4dc0dc0f2d903b7a);
+            
+    
+            var marker_62d0082a7f0eaa17734f30289544500a = L.marker(
+                [-25.4395617, -49.2323212],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_e7df03adcfc73c71a72384055dcc602c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f885c532b595dc6c44593d5c199b4ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c99e9e2dca7ab8899da2f54d05ed9f8c = $(`<div id="html_c99e9e2dca7ab8899da2f54d05ed9f8c" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antônio Olívio Rodrigues, 464, Curitiba, PR<br>         Preço: R$ 950,000 | Área: 176.0 m²<br>         Valor/m²: R$ 5398/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-176m2-RS950000/id-27211551/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_8f885c532b595dc6c44593d5c199b4ec.setContent(html_c99e9e2dca7ab8899da2f54d05ed9f8c);
+            
+        
+
+        marker_62d0082a7f0eaa17734f30289544500a.bindPopup(popup_8f885c532b595dc6c44593d5c199b4ec)
+        ;
+
+        
+    
+    
+                marker_62d0082a7f0eaa17734f30289544500a.setIcon(icon_e7df03adcfc73c71a72384055dcc602c);
+            
+    
+            var marker_08f2d612cf0c1a68bd02e16f0923a126 = L.marker(
+                [-25.4363261, -49.2223159],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_ea72eae5d8f1b6a0ddf176212392cfba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9134c4a6722c21d2ad6b502657b9dd7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abd42362f6d4f51e56eed72b3551f549 = $(`<div id="html_abd42362f6d4f51e56eed72b3551f549" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Professor Benedito Conceição, 248, Curitiba, PR<br>         Preço: R$ 990,000 | Área: 162.0 m²<br>         Valor/m²: R$ 6111/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-204m2-RS990000/id-30757116/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9134c4a6722c21d2ad6b502657b9dd7d.setContent(html_abd42362f6d4f51e56eed72b3551f549);
+            
+        
+
+        marker_08f2d612cf0c1a68bd02e16f0923a126.bindPopup(popup_9134c4a6722c21d2ad6b502657b9dd7d)
+        ;
+
+        
+    
+    
+                marker_08f2d612cf0c1a68bd02e16f0923a126.setIcon(icon_ea72eae5d8f1b6a0ddf176212392cfba);
+            
+    
+            var marker_84f990d5113c20e42c1167cf5e443abe = L.marker(
+                [-25.4365115, -49.2209779],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_00be0cdfb5548b9d39aa049b89c27a9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecee96d2cbe4d5b107da22972642ea12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fdd482e842217b6af4d32a6f2297c27 = $(`<div id="html_9fdd482e842217b6af4d32a6f2297c27" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Professor Benedito Conceição, 371, Curitiba, PR<br>         Preço: R$ 995,000 | Área: 184.0 m²<br>         Valor/m²: R$ 5408/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-184m2-RS995000/id-31262648/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_ecee96d2cbe4d5b107da22972642ea12.setContent(html_9fdd482e842217b6af4d32a6f2297c27);
+            
+        
+
+        marker_84f990d5113c20e42c1167cf5e443abe.bindPopup(popup_ecee96d2cbe4d5b107da22972642ea12)
+        ;
+
+        
+    
+    
+                marker_84f990d5113c20e42c1167cf5e443abe.setIcon(icon_00be0cdfb5548b9d39aa049b89c27a9c);
+            
+    
+            var marker_e351a73a4959a7d7b33234aa8fd938f1 = L.marker(
+                [-25.4377664, -49.2144957],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_b5dcef201fa973063a0928b04a998af7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c0d01fe083f83cf5dcbbe2e9df998e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c1016c5ec7466f321cf59368fcd94be = $(`<div id="html_3c1016c5ec7466f321cf59368fcd94be" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Antônio Morona, 55, Curitiba, PR<br>         Preço: R$ 1,025,000 | Área: 171.0 m²<br>         Valor/m²: R$ 5994/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-171m2-RS1025000/id-23366236/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_09c0d01fe083f83cf5dcbbe2e9df998e.setContent(html_3c1016c5ec7466f321cf59368fcd94be);
+            
+        
+
+        marker_e351a73a4959a7d7b33234aa8fd938f1.bindPopup(popup_09c0d01fe083f83cf5dcbbe2e9df998e)
+        ;
+
+        
+    
+    
+                marker_e351a73a4959a7d7b33234aa8fd938f1.setIcon(icon_b5dcef201fa973063a0928b04a998af7);
+            
+    
+            var marker_82d134dd22eecd51a8f2a20584bb55f2 = L.marker(
+                [-25.4384426, -49.2171688],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_779fd05d6fe4f061282c4c722b869fa3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b7e552bb492761be781202b10819bbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04dc39faf3d9ad509a628cc905c5835f = $(`<div id="html_04dc39faf3d9ad509a628cc905c5835f" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Professor Benedito Conceição, 814, Curitiba, PR<br>         Preço: R$ 1,080,000 | Área: 182.0 m²<br>         Valor/m²: R$ 5934/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-182m2-RS1080000/id-10841796/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_6b7e552bb492761be781202b10819bbe.setContent(html_04dc39faf3d9ad509a628cc905c5835f);
+            
+        
+
+        marker_82d134dd22eecd51a8f2a20584bb55f2.bindPopup(popup_6b7e552bb492761be781202b10819bbe)
+        ;
+
+        
+    
+    
+                marker_82d134dd22eecd51a8f2a20584bb55f2.setIcon(icon_779fd05d6fe4f061282c4c722b869fa3);
+            
+    
+            var marker_784bc58ae1bf6b7c43a53eb51d0cfdb8 = L.marker(
+                [-25.4373193, -49.2162719],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_43804dfc3aa6a404964d2f95508fdd18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a57dccc8d8782ac758065183a73bd84 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e51e14350fa44a0c8155c0e575d88345 = $(`<div id="html_e51e14350fa44a0c8155c0e575d88345" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Afonso Arinos, 139, Curitiba, PR<br>         Preço: R$ 1,200,000 | Área: 204.0 m²<br>         Valor/m²: R$ 5882/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-204m2-RS1200000/id-30241239/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_4a57dccc8d8782ac758065183a73bd84.setContent(html_e51e14350fa44a0c8155c0e575d88345);
+            
+        
+
+        marker_784bc58ae1bf6b7c43a53eb51d0cfdb8.bindPopup(popup_4a57dccc8d8782ac758065183a73bd84)
+        ;
+
+        
+    
+    
+                marker_784bc58ae1bf6b7c43a53eb51d0cfdb8.setIcon(icon_43804dfc3aa6a404964d2f95508fdd18);
+            
+    
+            var marker_43557109643d8196cb03a8ae34de13e4 = L.marker(
+                [-25.4373193, -49.2162719],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_068c84680074d776ba28bae49d28e2ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fb7287c56cb295d0f5f08c74771dae9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5ee4885a0f35e3981ac9db54e8481a9 = $(`<div id="html_f5ee4885a0f35e3981ac9db54e8481a9" style="width: 100.0%; height: 100.0%;">         <b>Garagem</b><br>         Rua Afonso Arinos, 139, Curitiba, PR<br>         Preço: R$ 1,200,000 | Área: 204.0 m²<br>         Valor/m²: R$ 5882/m²<br>         Quartos: 5 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS1200000/id-30195367/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_3fb7287c56cb295d0f5f08c74771dae9.setContent(html_f5ee4885a0f35e3981ac9db54e8481a9);
+            
+        
+
+        marker_43557109643d8196cb03a8ae34de13e4.bindPopup(popup_3fb7287c56cb295d0f5f08c74771dae9)
+        ;
+
+        
+    
+    
+                marker_43557109643d8196cb03a8ae34de13e4.setIcon(icon_068c84680074d776ba28bae49d28e2ce);
+            
+    
+            var marker_76d5e69aafc346b1083ea855e3185b69 = L.marker(
+                [-25.4391645, -49.2168139],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_175ea528b0d14131e75c53ab183c549c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68c395ca1913f7ae06974291f7119afd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dffeec83847023f95e45f5d14086ce5 = $(`<div id="html_5dffeec83847023f95e45f5d14086ce5" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Coronel Arthur Ferreira De Abreu, 468, Curitiba, PR<br>         Preço: R$ 1,210,000 | Área: 221.0 m²<br>         Valor/m²: R$ 5475/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-303m2-RS1210000/id-29169719/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_68c395ca1913f7ae06974291f7119afd.setContent(html_5dffeec83847023f95e45f5d14086ce5);
+            
+        
+
+        marker_76d5e69aafc346b1083ea855e3185b69.bindPopup(popup_68c395ca1913f7ae06974291f7119afd)
+        ;
+
+        
+    
+    
+                marker_76d5e69aafc346b1083ea855e3185b69.setIcon(icon_175ea528b0d14131e75c53ab183c549c);
+            
+    
+            var marker_fe92860c9daf37d9402943d53caf4143 = L.marker(
+                [-25.4381268, -49.2275528],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_391dd42894d4f784d6964e0f46a36bfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_760628057bb00511432becc480a4e3ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40bfaa938d5afefb9ba4b4691a075da6 = $(`<div id="html_40bfaa938d5afefb9ba4b4691a075da6" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Francisco Mota Machado, 236, Curitiba, PR<br>         Preço: R$ 1,250,000 | Área: 206.0 m²<br>         Valor/m²: R$ 6068/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-247m2-RS1250000/id-24957012/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_760628057bb00511432becc480a4e3ca.setContent(html_40bfaa938d5afefb9ba4b4691a075da6);
+            
+        
+
+        marker_fe92860c9daf37d9402943d53caf4143.bindPopup(popup_760628057bb00511432becc480a4e3ca)
+        ;
+
+        
+    
+    
+                marker_fe92860c9daf37d9402943d53caf4143.setIcon(icon_391dd42894d4f784d6964e0f46a36bfd);
+            
+    
+            var marker_343683afb80e39519ddf1b4fcfdf4d7f = L.marker(
+                [-25.4365323, -49.2127443],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_143bf1bae9cc0a3ace6c0f71da138509 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6f18631831e1c59df372b6f1b85e47b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c41d81fb59679b1c1668e364449cdeb = $(`<div id="html_0c41d81fb59679b1c1668e364449cdeb" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Raul Caron, Curitiba, PR<br>         Preço: R$ 1,270,000 | Área: 220.0 m²<br>         Valor/m²: R$ 5773/m²<br>         Quartos: 4 | Banheiros: 3 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS1270000/id-30905648/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_c6f18631831e1c59df372b6f1b85e47b.setContent(html_0c41d81fb59679b1c1668e364449cdeb);
+            
+        
+
+        marker_343683afb80e39519ddf1b4fcfdf4d7f.bindPopup(popup_c6f18631831e1c59df372b6f1b85e47b)
+        ;
+
+        
+    
+    
+                marker_343683afb80e39519ddf1b4fcfdf4d7f.setIcon(icon_143bf1bae9cc0a3ace6c0f71da138509);
+            
+    
+            var marker_7b9ce733acb7898616b6d1cbcbb05f64 = L.marker(
+                [-25.4416204, -49.2074266],
+                {
+}
+            ).addTo(marker_cluster_f7264111c63e9601809cf2c48f7d7213);
+        
+    
+            var icon_5649f5503457eb17e2bc0e4d3b518f0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_938e6f5e9e958d31eba360ce7e5195b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0e222303974bb5e21489d73fc4202c5 = $(`<div id="html_e0e222303974bb5e21489d73fc4202c5" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Paulo Kissula, 296, Curitiba, PR<br>         Preço: R$ 1,800,000 | Área: 337.0 m²<br>         Valor/m²: R$ 5341/m²<br>         Quartos: 4 | Banheiros: 6 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-337m2-RS1800000/id-32415780/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_938e6f5e9e958d31eba360ce7e5195b7.setContent(html_e0e222303974bb5e21489d73fc4202c5);
+            
+        
+
+        marker_7b9ce733acb7898616b6d1cbcbb05f64.bindPopup(popup_938e6f5e9e958d31eba360ce7e5195b7)
+        ;
+
+        
+    
+    
+                marker_7b9ce733acb7898616b6d1cbcbb05f64.setIcon(icon_5649f5503457eb17e2bc0e4d3b518f0b);
+            
+    
+            marker_cluster_f7264111c63e9601809cf2c48f7d7213.addTo(feature_group_f53c3b747f3d86e293941e0b344aa5ac);
+        
+    
+            feature_group_f53c3b747f3d86e293941e0b344aa5ac.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var feature_group_3ea9deaa50b7c2a87e307135b0d70929 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cluster_dbdb378f5005c38d781bd110bf057d2e = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_a80f8b72ae4fd58185661f79875994e1 = L.marker(
+                [-25.4374108, -49.2082561],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_326c3fafb5f424fd79af6745dbe2747d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69415e1579ef83ab1276fcf21d69095f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c41751c2fcd4ded2e65dcfc355821d70 = $(`<div id="html_c41751c2fcd4ded2e65dcfc355821d70" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, 940, Curitiba, PR<br>         Preço: R$ 530,000 | Área: 56.0 m²<br>         Valor/m²: R$ 9464/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS530000/id-28719415/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_69415e1579ef83ab1276fcf21d69095f.setContent(html_c41751c2fcd4ded2e65dcfc355821d70);
+            
+        
+
+        marker_a80f8b72ae4fd58185661f79875994e1.bindPopup(popup_69415e1579ef83ab1276fcf21d69095f)
+        ;
+
+        
+    
+    
+                marker_a80f8b72ae4fd58185661f79875994e1.setIcon(icon_326c3fafb5f424fd79af6745dbe2747d);
+            
+    
+            var marker_a04736906c1f131d542263ed3784fc47 = L.marker(
+                [-25.434247, -49.204488],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_6009a4d469284d8c4324d2ee2e681d25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_769e1825f796d472fbe8593935d70b09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_437e2088124fbea655e7f5f75b67ee82 = $(`<div id="html_437e2088124fbea655e7f5f75b67ee82" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Padre José Edmundo Dilly, 111, Curitiba, PR<br>         Preço: R$ 550,000 | Área: 80.0 m²<br>         Valor/m²: R$ 6875/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-95m2-RS550000/id-31544417/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_769e1825f796d472fbe8593935d70b09.setContent(html_437e2088124fbea655e7f5f75b67ee82);
+            
+        
+
+        marker_a04736906c1f131d542263ed3784fc47.bindPopup(popup_769e1825f796d472fbe8593935d70b09)
+        ;
+
+        
+    
+    
+                marker_a04736906c1f131d542263ed3784fc47.setIcon(icon_6009a4d469284d8c4324d2ee2e681d25);
+            
+    
+            var marker_f77ba23f51cb71601eec14cd96b43005 = L.marker(
+                [-25.434247, -49.204488],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_e68fba090ff72921b1eaffd0169c3a09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8c5df5a276fac3667e97dead79f0708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85898a7ccd592ad7c0fb096375a4b628 = $(`<div id="html_85898a7ccd592ad7c0fb096375a4b628" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Padre José Edmundo Dilly, 111, Curitiba, PR<br>         Preço: R$ 579,999 | Área: 86.0 m²<br>         Valor/m²: R$ 6744/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-116m2-RS579999/id-23948919/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b8c5df5a276fac3667e97dead79f0708.setContent(html_85898a7ccd592ad7c0fb096375a4b628);
+            
+        
+
+        marker_f77ba23f51cb71601eec14cd96b43005.bindPopup(popup_b8c5df5a276fac3667e97dead79f0708)
+        ;
+
+        
+    
+    
+                marker_f77ba23f51cb71601eec14cd96b43005.setIcon(icon_e68fba090ff72921b1eaffd0169c3a09);
+            
+    
+            var marker_cc31388d2eac3f27f808a2777e68340f = L.marker(
+                [-25.4389229, -49.2067712],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_26a964ebb4e92024608050d0e2f7e8c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6fed800bd351ffb588ed227d0c56b86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06cf3f36f12f853f5d1b440b83a586c0 = $(`<div id="html_06cf3f36f12f853f5d1b440b83a586c0" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Benedito França, 161, Curitiba, PR<br>         Preço: R$ 582,900 | Área: 95.0 m²<br>         Valor/m²: R$ 6136/m²<br>         Quartos: 5 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-com-garagem-pr-curitiba-capao-da-imbuia-200m2-RS582900/id-14415444/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a6fed800bd351ffb588ed227d0c56b86.setContent(html_06cf3f36f12f853f5d1b440b83a586c0);
+            
+        
+
+        marker_cc31388d2eac3f27f808a2777e68340f.bindPopup(popup_a6fed800bd351ffb588ed227d0c56b86)
+        ;
+
+        
+    
+    
+                marker_cc31388d2eac3f27f808a2777e68340f.setIcon(icon_26a964ebb4e92024608050d0e2f7e8c4);
+            
+    
+            var marker_6d68a22ac263596208c4674aa71f3aff = L.marker(
+                [-25.438266, -49.2063522],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_d9c4ec867cc7d47fa30075c8be27a5d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9c03ed50e1bcce4ccc3bee96912629d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3bcb870e6830a80fde60f79ca15eb70 = $(`<div id="html_d3bcb870e6830a80fde60f79ca15eb70" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Benedito França, 116, Curitiba, PR<br>         Preço: R$ 583,000 | Área: 95.0 m²<br>         Valor/m²: R$ 6137/m²<br>         Quartos: 5 | Banheiros: 3 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-5-quartos-pr-curitiba-capao-da-imbuia-2200m2-RS583000/id-25075871/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_a9c03ed50e1bcce4ccc3bee96912629d.setContent(html_d3bcb870e6830a80fde60f79ca15eb70);
+            
+        
+
+        marker_6d68a22ac263596208c4674aa71f3aff.bindPopup(popup_a9c03ed50e1bcce4ccc3bee96912629d)
+        ;
+
+        
+    
+    
+                marker_6d68a22ac263596208c4674aa71f3aff.setIcon(icon_d9c4ec867cc7d47fa30075c8be27a5d2);
+            
+    
+            var marker_c9c00da3d4c631f348e60b9692de23b1 = L.marker(
+                [-25.4376929, -49.214398],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_b12069c4c09e0e41d5eab194e70cb025 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e07b364a7b23dce306668f997f0226e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82ec0e5cf82ca76a500cb7e8084e853d = $(`<div id="html_82ec0e5cf82ca76a500cb7e8084e853d" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Antonio Morona, 27, Curitiba, PR<br>         Preço: R$ 630,000 | Área: 82.0 m²<br>         Valor/m²: R$ 7683/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS630000/id-32983795/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_8e07b364a7b23dce306668f997f0226e.setContent(html_82ec0e5cf82ca76a500cb7e8084e853d);
+            
+        
+
+        marker_c9c00da3d4c631f348e60b9692de23b1.bindPopup(popup_8e07b364a7b23dce306668f997f0226e)
+        ;
+
+        
+    
+    
+                marker_c9c00da3d4c631f348e60b9692de23b1.setIcon(icon_b12069c4c09e0e41d5eab194e70cb025);
+            
+    
+            var marker_18a53528d9864ce270e8a1c54a8d6068 = L.marker(
+                [-25.4368386, -49.226299],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_8bfc5dfdddb3791ea4743c5b282f960c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ddd6b8e74f3560c3382af2c3b5125f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b36f824d6116089b344ba1d2c207b853 = $(`<div id="html_b36f824d6116089b344ba1d2c207b853" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Sétimo Simionato, Curitiba, PR<br>         Preço: R$ 649,900 | Área: 106.0 m²<br>         Valor/m²: R$ 6131/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-106m2-RS649900/id-32508713/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_9ddd6b8e74f3560c3382af2c3b5125f8.setContent(html_b36f824d6116089b344ba1d2c207b853);
+            
+        
+
+        marker_18a53528d9864ce270e8a1c54a8d6068.bindPopup(popup_9ddd6b8e74f3560c3382af2c3b5125f8)
+        ;
+
+        
+    
+    
+                marker_18a53528d9864ce270e8a1c54a8d6068.setIcon(icon_8bfc5dfdddb3791ea4743c5b282f960c);
+            
+    
+            var marker_e616246d641fe161bcc853f02237139e = L.marker(
+                [-25.4360289, -49.2055942],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_930bf44432bf7f675c64822e335e0715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fae98eb476c4ba671a089277d3bc6eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03d4419ab6e06c17ee3f0ce211a88947 = $(`<div id="html_03d4419ab6e06c17ee3f0ce211a88947" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Casimiro Tosi, 256, Curitiba, PR<br>         Preço: R$ 750,000 | Área: 120.0 m²<br>         Valor/m²: R$ 6250/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-360m2-RS750000/id-26083968/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_0fae98eb476c4ba671a089277d3bc6eb.setContent(html_03d4419ab6e06c17ee3f0ce211a88947);
+            
+        
+
+        marker_e616246d641fe161bcc853f02237139e.bindPopup(popup_0fae98eb476c4ba671a089277d3bc6eb)
+        ;
+
+        
+    
+    
+                marker_e616246d641fe161bcc853f02237139e.setIcon(icon_930bf44432bf7f675c64822e335e0715);
+            
+    
+            var marker_bd8295761192b293b3faec01b30b81e1 = L.marker(
+                [-25.4384232, -49.2127695],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_fb257e4a374bf1b2e4c399c999df3766 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa78431fb8fcac8755f9025b6ec700eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eeb76f2dc76041f94ceeef96175e96fa = $(`<div id="html_eeb76f2dc76041f94ceeef96175e96fa" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Valdomiro Ribeiro Da Fonseca, 149, Curitiba, PR<br>         Preço: R$ 750,000 | Área: 114.0 m²<br>         Valor/m²: R$ 6579/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-114m2-RS750000/id-23393867/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_aa78431fb8fcac8755f9025b6ec700eb.setContent(html_eeb76f2dc76041f94ceeef96175e96fa);
+            
+        
+
+        marker_bd8295761192b293b3faec01b30b81e1.bindPopup(popup_aa78431fb8fcac8755f9025b6ec700eb)
+        ;
+
+        
+    
+    
+                marker_bd8295761192b293b3faec01b30b81e1.setIcon(icon_fb257e4a374bf1b2e4c399c999df3766);
+            
+    
+            var marker_7ba3805278a180c205c9aed188f973ce = L.marker(
+                [-25.4412909, -49.2063741],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_df8e2c89ccaf33b1cb5c47e68ac1445b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b56682010a628d8b8003b9b838e38b53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7564e06e6a014e30e9e02f0202b4b563 = $(`<div id="html_7564e06e6a014e30e9e02f0202b4b563" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Inocêncio Coelho Martins, Curitiba, PR<br>         Preço: R$ 820,000 | Área: 108.0 m²<br>         Valor/m²: R$ 7593/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-108m2-RS820000/id-32724310/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b56682010a628d8b8003b9b838e38b53.setContent(html_7564e06e6a014e30e9e02f0202b4b563);
+            
+        
+
+        marker_7ba3805278a180c205c9aed188f973ce.bindPopup(popup_b56682010a628d8b8003b9b838e38b53)
+        ;
+
+        
+    
+    
+                marker_7ba3805278a180c205c9aed188f973ce.setIcon(icon_df8e2c89ccaf33b1cb5c47e68ac1445b);
+            
+    
+            var marker_625e17739eb5bfade390c053a8eca006 = L.marker(
+                [-25.441677, -49.2113825],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_fe5b47d9c9dabb68411ea202d432a5e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f227afa135cc2b342f0db6af5e3d7f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f69ed0cab29ce7de9b5491f91cad2143 = $(`<div id="html_f69ed0cab29ce7de9b5491f91cad2143" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua João Ponciano Borges, 262, Curitiba, PR<br>         Preço: R$ 849,000 | Área: 132.0 m²<br>         Valor/m²: R$ 6432/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: nan<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-pr-curitiba-capao-da-imbuia-132m2-RS849000/id-29133753/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_0f227afa135cc2b342f0db6af5e3d7f0.setContent(html_f69ed0cab29ce7de9b5491f91cad2143);
+            
+        
+
+        marker_625e17739eb5bfade390c053a8eca006.bindPopup(popup_0f227afa135cc2b342f0db6af5e3d7f0)
+        ;
+
+        
+    
+    
+                marker_625e17739eb5bfade390c053a8eca006.setIcon(icon_fe5b47d9c9dabb68411ea202d432a5e8);
+            
+    
+            var marker_296299365c2cade90e9c867be22d07ed = L.marker(
+                [-25.4348324, -49.2165488],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_085a1b3caa06542e3bec8ae07fc77971 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a143751ad19dc30e73e928bda370952 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84e99dcd9562d7061cf3e1eba4bc1de0 = $(`<div id="html_84e99dcd9562d7061cf3e1eba4bc1de0" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Osmário De Lima, 281, Curitiba, PR<br>         Preço: R$ 899,000 | Área: 135.0 m²<br>         Valor/m²: R$ 6659/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 3.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-135m2-RS899000/id-31350217/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_4a143751ad19dc30e73e928bda370952.setContent(html_84e99dcd9562d7061cf3e1eba4bc1de0);
+            
+        
+
+        marker_296299365c2cade90e9c867be22d07ed.bindPopup(popup_4a143751ad19dc30e73e928bda370952)
+        ;
+
+        
+    
+    
+                marker_296299365c2cade90e9c867be22d07ed.setIcon(icon_085a1b3caa06542e3bec8ae07fc77971);
+            
+    
+            var marker_78247e0f03ec9c34536ecdcae44d645c = L.marker(
+                [-25.4348324, -49.2165488],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_af3d0e77b6fe94a0cf913b5020bd0436 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20907a5ee345abd4ec2abe875071a854 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b715a102490f4afb988c4534cd4deec7 = $(`<div id="html_b715a102490f4afb988c4534cd4deec7" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Osmário De Lima, 281, Curitiba, PR<br>         Preço: R$ 940,000 | Área: 120.0 m²<br>         Valor/m²: R$ 7833/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-120m2-RS940000/id-24241736/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_20907a5ee345abd4ec2abe875071a854.setContent(html_b715a102490f4afb988c4534cd4deec7);
+            
+        
+
+        marker_78247e0f03ec9c34536ecdcae44d645c.bindPopup(popup_20907a5ee345abd4ec2abe875071a854)
+        ;
+
+        
+    
+    
+                marker_78247e0f03ec9c34536ecdcae44d645c.setIcon(icon_af3d0e77b6fe94a0cf913b5020bd0436);
+            
+    
+            var marker_8fa1ac767b46330eda3ca8b082e1b327 = L.marker(
+                [-25.4374442, -49.2122617],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_eb071f944e7a8464f9a3b33b2c7e8154 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_430b4bf1579988f4bae292041b59ef7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_924a231218446623da24cea4f915680d = $(`<div id="html_924a231218446623da24cea4f915680d" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Humberto Mattana, 129, Curitiba, PR<br>         Preço: R$ 979,000 | Área: 159.0 m²<br>         Valor/m²: R$ 6157/m²<br>         Quartos: 3 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-RS979000/id-12348245/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_430b4bf1579988f4bae292041b59ef7f.setContent(html_924a231218446623da24cea4f915680d);
+            
+        
+
+        marker_8fa1ac767b46330eda3ca8b082e1b327.bindPopup(popup_430b4bf1579988f4bae292041b59ef7f)
+        ;
+
+        
+    
+    
+                marker_8fa1ac767b46330eda3ca8b082e1b327.setIcon(icon_eb071f944e7a8464f9a3b33b2c7e8154);
+            
+    
+            var marker_f5bc8bb30b6e48c2fb586bc5460b0282 = L.marker(
+                [-25.436227, -49.2148989],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_c6d80e63776c5f6c21a435c3821a81ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b86f0f2ecd251f90148fa2bd096f8c3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07feca5101c1e4d4ee15b620d3a0124f = $(`<div id="html_07feca5101c1e4d4ee15b620d3a0124f" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Humberto Mattana, 151, Curitiba, PR<br>         Preço: R$ 979,000 | Área: 159.0 m²<br>         Valor/m²: R$ 6157/m²<br>         Quartos: 3 | Banheiros: 2 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-210m2-RS979000/id-32094913/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_b86f0f2ecd251f90148fa2bd096f8c3e.setContent(html_07feca5101c1e4d4ee15b620d3a0124f);
+            
+        
+
+        marker_f5bc8bb30b6e48c2fb586bc5460b0282.bindPopup(popup_b86f0f2ecd251f90148fa2bd096f8c3e)
+        ;
+
+        
+    
+    
+                marker_f5bc8bb30b6e48c2fb586bc5460b0282.setIcon(icon_c6d80e63776c5f6c21a435c3821a81ef);
+            
+    
+            var marker_fab4b61c454a4f61b852b78b01062449 = L.marker(
+                [-25.4377664, -49.2144957],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_18bb5bc166ca0a05e82766485284acf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9aef6b8f7fed3a7eeda9f976054a99c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acdecbf5d3eed6f29e7f82eb2332f66b = $(`<div id="html_acdecbf5d3eed6f29e7f82eb2332f66b" style="width: 100.0%; height: 100.0%;">         <b>Outro</b><br>         Rua Antônio Morona, 55, Curitiba, PR<br>         Preço: R$ 1,025,000 | Área: 136.0 m²<br>         Valor/m²: R$ 7537/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 1.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-170m2-RS1025000/id-32586746/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_d9aef6b8f7fed3a7eeda9f976054a99c.setContent(html_acdecbf5d3eed6f29e7f82eb2332f66b);
+            
+        
+
+        marker_fab4b61c454a4f61b852b78b01062449.bindPopup(popup_d9aef6b8f7fed3a7eeda9f976054a99c)
+        ;
+
+        
+    
+    
+                marker_fab4b61c454a4f61b852b78b01062449.setIcon(icon_18bb5bc166ca0a05e82766485284acf9);
+            
+    
+            var marker_650c6b48a0489264a3fc47ee0c7f1476 = L.marker(
+                [-25.4416296, -49.2096383],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_3c8b60aaa6ce0cba817609f4b0f8b1a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_283edad427d7bf921521f1078a2875cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c6bd30162c9b4a97cc2c92439c599d9 = $(`<div id="html_5c6bd30162c9b4a97cc2c92439c599d9" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Benedito Conceição, 365, Curitiba, PR<br>         Preço: R$ 1,150,000 | Área: 177.0 m²<br>         Valor/m²: R$ 6497/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-177m2-RS1150000/id-25070844/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_283edad427d7bf921521f1078a2875cf.setContent(html_5c6bd30162c9b4a97cc2c92439c599d9);
+            
+        
+
+        marker_650c6b48a0489264a3fc47ee0c7f1476.bindPopup(popup_283edad427d7bf921521f1078a2875cf)
+        ;
+
+        
+    
+    
+                marker_650c6b48a0489264a3fc47ee0c7f1476.setIcon(icon_3c8b60aaa6ce0cba817609f4b0f8b1a4);
+            
+    
+            var marker_a9a385404211dd6a04e527258c410eb2 = L.marker(
+                [-25.4365115, -49.2209779],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_6cc3e8923ae64b39342f05fb21901343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3da392ab6a2e99b812fced05a6e0028 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cb2f3876a8d24e212d9adc67bd046d9 = $(`<div id="html_9cb2f3876a8d24e212d9adc67bd046d9" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Professor Benedito Conceição, 371, Curitiba, PR<br>         Preço: R$ 1,150,000 | Área: 183.0 m²<br>         Valor/m²: R$ 6284/m²<br>         Quartos: 3 | Banheiros: 1 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-183m2-RS1150000/id-31262649/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_f3da392ab6a2e99b812fced05a6e0028.setContent(html_9cb2f3876a8d24e212d9adc67bd046d9);
+            
+        
+
+        marker_a9a385404211dd6a04e527258c410eb2.bindPopup(popup_f3da392ab6a2e99b812fced05a6e0028)
+        ;
+
+        
+    
+    
+                marker_a9a385404211dd6a04e527258c410eb2.setIcon(icon_6cc3e8923ae64b39342f05fb21901343);
+            
+    
+            var marker_5e31909413b81727e790824050f21d20 = L.marker(
+                [-25.4348446, -49.2144151],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_653d788ccc4fd98d073afbfc7787e805 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf20afff1dbc131f1807b87e1e5f7764 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56eb35be1ea2698bbc1e2bfa14305856 = $(`<div id="html_56eb35be1ea2698bbc1e2bfa14305856" style="width: 100.0%; height: 100.0%;">         <b>Sobrado</b><br>         Rua Engenheiro Alberto Monteiro De Carvalho, 458, Curitiba, PR<br>         Preço: R$ 1,200,000 | Área: 140.0 m²<br>         Valor/m²: R$ 8571/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-140m2-RS1200000/id-25075987/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_bf20afff1dbc131f1807b87e1e5f7764.setContent(html_56eb35be1ea2698bbc1e2bfa14305856);
+            
+        
+
+        marker_5e31909413b81727e790824050f21d20.bindPopup(popup_bf20afff1dbc131f1807b87e1e5f7764)
+        ;
+
+        
+    
+    
+                marker_5e31909413b81727e790824050f21d20.setIcon(icon_653d788ccc4fd98d073afbfc7787e805);
+            
+    
+            var marker_6daa1b826243e5eebccdfec7c07c917e = L.marker(
+                [-25.441038, -49.2180579],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_1fb2bcae9104f53c8270901d01877b3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecc1c84ff9b570e01ef0e60406eb259b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21418a5e75ae75cb494d2cfa060a83fa = $(`<div id="html_21418a5e75ae75cb494d2cfa060a83fa" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua José Bassani, 60, Curitiba, PR<br>         Preço: R$ 1,290,000 | Área: 204.0 m²<br>         Valor/m²: R$ 6324/m²<br>         Quartos: 6 | Banheiros: 4 | Vagas: 4.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-6-quartos-com-garagem-pr-curitiba-capao-da-imbuia-370m2-RS1290000/id-30267409/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_ecc1c84ff9b570e01ef0e60406eb259b.setContent(html_21418a5e75ae75cb494d2cfa060a83fa);
+            
+        
+
+        marker_6daa1b826243e5eebccdfec7c07c917e.bindPopup(popup_ecc1c84ff9b570e01ef0e60406eb259b)
+        ;
+
+        
+    
+    
+                marker_6daa1b826243e5eebccdfec7c07c917e.setIcon(icon_1fb2bcae9104f53c8270901d01877b3f);
+            
+    
+            var marker_576bf88dc5c2783f5a1f8a1bb7727a7c = L.marker(
+                [-25.4385279, -49.214274],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_40765b8f61392cbd29b640c27144674c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27b1766c6805a44302ff50f675a17657 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4970cd87a3d1926c45cb8f8cb1bfc07e = $(`<div id="html_4970cd87a3d1926c45cb8f8cb1bfc07e" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Clávio Molinari, 500, Curitiba, PR<br>         Preço: R$ 1,380,000 | Área: 173.0 m²<br>         Valor/m²: R$ 7977/m²<br>         Quartos: 3 | Banheiros: 3 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-3-quartos-com-garagem-pr-curitiba-capao-da-imbuia-200m2-RS1380000/id-27163741/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_27b1766c6805a44302ff50f675a17657.setContent(html_4970cd87a3d1926c45cb8f8cb1bfc07e);
+            
+        
+
+        marker_576bf88dc5c2783f5a1f8a1bb7727a7c.bindPopup(popup_27b1766c6805a44302ff50f675a17657)
+        ;
+
+        
+    
+    
+                marker_576bf88dc5c2783f5a1f8a1bb7727a7c.setIcon(icon_40765b8f61392cbd29b640c27144674c);
+            
+    
+            var marker_9170261edffc23caebd0723f8903d365 = L.marker(
+                [-25.4397003, -49.2104922],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_277345fdab951be95a6498624f335b84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7266300ef33c44b2e7b998079f364fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6000bfde4b2037c28772e501925b8e67 = $(`<div id="html_6000bfde4b2037c28772e501925b8e67" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua João Ponciano Borges, 192, Curitiba, PR<br>         Preço: R$ 1,890,000 | Área: 285.0 m²<br>         Valor/m²: R$ 6632/m²<br>         Quartos: 4 | Banheiros: 4 | Vagas: 2.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-4-quartos-com-garagem-pr-curitiba-capao-da-imbuia-399m2-RS1890000/id-19571610/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_e7266300ef33c44b2e7b998079f364fd.setContent(html_6000bfde4b2037c28772e501925b8e67);
+            
+        
+
+        marker_9170261edffc23caebd0723f8903d365.bindPopup(popup_e7266300ef33c44b2e7b998079f364fd)
+        ;
+
+        
+    
+    
+                marker_9170261edffc23caebd0723f8903d365.setIcon(icon_277345fdab951be95a6498624f335b84);
+            
+    
+            var marker_3be9239655b3acac260e9523feff7c71 = L.marker(
+                [-25.4386249, -49.2283018],
+                {
+}
+            ).addTo(marker_cluster_dbdb378f5005c38d781bd110bf057d2e);
+        
+    
+            var icon_e319b3062d398bde4f735ac1f153745d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_830e1b618abda03dc8f064903a707fb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9bc1e735fe3c2c9b28ea629a4943cb47 = $(`<div id="html_9bc1e735fe3c2c9b28ea629a4943cb47" style="width: 100.0%; height: 100.0%;">         <b>Casa</b><br>         Rua Francisco Mota Machado, 521, Curitiba, PR<br>         Preço: R$ 3,100,000 | Área: 489.0 m²<br>         Valor/m²: R$ 6339/m²<br>         Quartos: 8 | Banheiros: 6 | Vagas: 8.0<br>         <a href="https://www.chavesnamao.com.br/imovel/casa-a-venda-8-quartos-com-garagem-pr-curitiba-capao-da-imbuia-52835m2-RS3100000/id-32682571/" target="_blank">Ver anúncio</a>         </div>`)[0];
+                popup_830e1b618abda03dc8f064903a707fb0.setContent(html_9bc1e735fe3c2c9b28ea629a4943cb47);
+            
+        
+
+        marker_3be9239655b3acac260e9523feff7c71.bindPopup(popup_830e1b618abda03dc8f064903a707fb0)
+        ;
+
+        
+    
+    
+                marker_3be9239655b3acac260e9523feff7c71.setIcon(icon_e319b3062d398bde4f735ac1f153745d);
+            
+    
+            marker_cluster_dbdb378f5005c38d781bd110bf057d2e.addTo(feature_group_3ea9deaa50b7c2a87e307135b0d70929);
+        
+    
+            feature_group_3ea9deaa50b7c2a87e307135b0d70929.addTo(map_9e580d51235b744554fd69991a8e0e99);
+        
+    
+            var layer_control_1a077ba91bb900cfa47d6e0833aedac1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_653d3b690788f10e260938f134a4dde9,
+                },
+                overlays :  {
+                    "R$ 0\u20133409/m\u00b2" : feature_group_f171928376f437d5e30048cb22ca91de,
+                    "R$ 3409\u20134315/m\u00b2" : feature_group_333232295a46c956e48b0beaa3c8cb80,
+                    "R$ 4315\u20135160/m\u00b2" : feature_group_6bd3c48dd0d83415307dca78b6ea0a89,
+                    "R$ 5160\u20136119/m\u00b2" : feature_group_f53c3b747f3d86e293941e0b344aa5ac,
+                    "Acima de R$ 6119/m\u00b2" : feature_group_3ea9deaa50b7c2a87e307135b0d70929,
+                },
+            };
+            let layer_control_1a077ba91bb900cfa47d6e0833aedac1 = L.control.layers(
+                layer_control_1a077ba91bb900cfa47d6e0833aedac1_layers.base_layers,
+                layer_control_1a077ba91bb900cfa47d6e0833aedac1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_9e580d51235b744554fd69991a8e0e99);
+
+        
+</script>
+</html>
